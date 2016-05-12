@@ -7,7 +7,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Velvet Fitting Products</title>
+<title>Velvet Fitting - PRIME CREATIONS Products</title>
 
 <?php include "header_includes.php"; ?>
 
@@ -18,158 +18,44 @@
 
 	<?php include "header.php"; ?>
 
-	<!-- Home page content start -->
+	<div class="container">
 
-	<div id="page-content">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<ul class="breadcrumb">
-						<li><a href="<?php echo __WEB_ROOT?>">Home</a></li>
-						<li>About Us</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-12">
-					<h1>Company Overview</h1>
+		<div class="row">
+			<div class="box">
+				<div class="col-lg-12">
+					<hr>
+					<h2 class="intro-text text-center">
+						Contact <strong>PRIME CREATIONS</strong>
+						<br><small> An ISO 9001 : 2008 Certified Company</small>
+					</h2>
 					<hr>
 				</div>
+				<div class="col-md-8">
+					<!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577248.8111883737!2d77.63693241337063!3d28.886250082968193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew+Delhi%2C+Delhi+110001!5e0!3m2!1sen!2sin!4v1463052424477"
+						width="100%" height="400" frameborder="0" scrolling="no"
+						marginheight="0" marginwidth="0" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-4">
+					<h6>
+						Address: B-23, DSIDC Compound, Jhilmil Industrial Area,
+							Shahdara, Delhi - 110095, India
+					</h6>
+					<h6>
+						Key Personnel: Mr. Sachin Aggarwal (Partner)
+					</h6>
+					<h6>
+						Contact: 91-11-22135206, +919999885214
+					</h6>
+				</div>
+				<div class="clearfix"></div>
 			</div>
-			<div class="row">
-				<div class="col-xs-12 col-md-6">
-					<img class="img-responsive"
-						src="<?php echo __WEB_ROOT?>/static/img/map-of-thailand.gif"
-						alt="Map">
-				</div>
-
-				<div class="col-xs-12 col-md-6">
-					<h2>Our Story</h2>
-					<p>We are one of Thailand's leading Gem Exporters of Precious &amp;
-						Semi Precious Colored Stones (specializing in natural &amp; genuine
-						Ruby, Sapphire and Emeralds) and operate our business from
-						Bangkok, Thailand and Jaipur (Rajasthan) India.</p>
-					<p>Authentic Stones Co. Ltd. has been operating globally since
-						1990 and specializing in all major shapes &amp; sizes (Cuts &amp; Cabs:
-						Rounds, Ovals, Pears, Octagons, Marquise, Taper/Baguette, Heart
-						and etc.).</p>
-					<p>We have a huge collection of Precious and Semi Precious
-						Beads, Briolettes, Tumbles &amp; Drops etc. from Low to Top Quality.</p>
-					<p>We are more than just a manufacturer - we re a one stop shop
-						for all your specialized needs viz. stones with specific shapes
-						and sizes for watches and other accessories. With generations of
-						experience in the Gem &amp; Jewelry Industry, Authentic Stones prides
-						itself on being the ultimate combination of "Quality, Style, Value
-						&amp; impeccable services worldwide".</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<hr>
-					<h2>Our Mission</h2>
-					<p>To color your loved once life with our colorful gemstones,
-						beads &amp; carvings.</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-12">
-					<h2>Our Passion</h2>
-					<p>To providing exceptional products and exemplary customer
-						service, at very nominal costs, are the leading factors for our
-						thriving business in this competitive market.</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-12">
-					<h2>We strive to provide</h2>
-					<ul>
-						<li>Great Price and Value</li>
-						<li>Wide Variety of Products</li>
-						<li>Innovative Designs &amp; Flawless Finish</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-12">
-					<h2>Our Aim</h2>
-					<p>Our aim is 100% customer satisfaction &amp; display 100% of the
-						company's offline inventory online through authenticstones.com to
-						its existing customers &amp; new customers worldwide (end users,
-						retailers, jewelers &amp; designers).</p>
-					<p>Every attempt has been made to give an accurate description
-						and photograph of each item. We encourage you to send request to
-						us for more details &amp; price information regarding a specific
-						product before you place your order. We are sure you will be happy
-						with your order. We cater to all market segments suiting all
-						budgets &amp; constraints.</p>
-					<hr>
-				</div>
-			</div>
-
-			<div class="row">
-				<h2>Integrity &amp; Compliance</h2>
-			</div>
-
-			<div class="row well center-block">
-				<div class="col-xs-12 col-md-2">
-					<a
-						href="<?php echo __WEB_ROOT?>/static/img/certificates/Certificate1.jpg"
-						class="thumbnail"> <img class="img-responsive sameHeight"
-						src="<?php echo __WEB_ROOT?>/static/img/certificates/Certificate1.jpg"
-						alt="Certificate">
-					</a>
-				</div>
-				<div class="col-xs-12 col-md-2">
-					<a
-						href="<?php echo __WEB_ROOT?>/static/img/certificates/Certificate.jpg"
-						class="thumbnail"> <img class="img-responsive sameHeight"
-						src="<?php echo __WEB_ROOT?>/static/img/certificates/Certificate.jpg"
-						alt="Certificate">
-					</a>
-				</div>
-				<div class="col-xs-12 col-md-2">
-					<a
-						href="<?php echo __WEB_ROOT?>/static/img/certificates/Company_Registration.jpg"
-						class="thumbnail"> <img class="img-responsive sameHeight"
-						src="<?php echo __WEB_ROOT?>/static/img/certificates/Company_Registration.jpg"
-						alt="Company Registration">
-					</a>
-				</div>
-				<div class="col-xs-12 col-md-2">
-					<a
-						href="<?php echo __WEB_ROOT?>/static/img/certificates/Certificate2.jpg"
-						class="thumbnail"> <img class="img-responsive sameHeight"
-						src="<?php echo __WEB_ROOT?>/static/img/certificates/Certificate2.jpg"
-						alt="Certificate">
-					</a>
-				</div>
-				<div class="col-xs-12 col-md-2">
-					<a
-						href="<?php echo __WEB_ROOT?>/static/img/certificates/Gem&JewellryAssociationMembership.jpg"
-						class="thumbnail"> <img class="img-responsive sameHeight"
-						src="<?php echo __WEB_ROOT?>/static/img/certificates/Gem&JewellryAssociationMembership.jpg"
-						alt="Gem & Jewellry Association Membership">
-					</a>
-				</div>
-				<div class="col-xs-12 col-md-2">
-					<a
-						href="<?php echo __WEB_ROOT?>/static/img/certificates/AboutUs.docx"
-						class="thumbnail"> <img class="img-responsive sameHeight"
-						src="<?php echo __WEB_ROOT?>/static/img/certificates/AboutUs.jpg"
-						alt="About Us">
-					</a>
-				</div>
-			</div>
-
 		</div>
-		<!-- /.container -->
-	</div>
 
-	<!-- Home page content end -->
+	</div>
+	<!-- /.container -->
+
 
 	<?php include "footer.php"; ?>
 
