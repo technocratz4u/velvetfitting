@@ -3,6 +3,17 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+ 
+ 
+@font-face {
+    font-family: "Josefin Slab";
+    src: url(../plugins/google-fonts/Josefin_Slab/JosefinSlab-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../plugins/google-fonts/Open_Sans/OpenSans-Regular.ttf) format("truetype");
+}
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -34,6 +45,15 @@ p {
 hr {
     max-width: 400px;
     border-color: #999999;
+}
+
+#logo-img{
+	height: 58px;
+	width: auto;
+	vertical-align: top;
+	margin-right: 21px;
+	opacity: 0.9;
+	border-radius: 6px;
 }
 
 .brand,
