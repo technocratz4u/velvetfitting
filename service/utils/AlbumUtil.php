@@ -23,23 +23,23 @@ class AlbumUtil{
 	}
 	
 	public static function getImageDirectoryForItem($itemId){
-		return $_SERVER["DOCUMENT_ROOT"].'/'.__GALLERY_ROOT.'/'.__IMAGE_FOLDER.'/'.__ITEM_FOLDER.'/'.$itemId;
+		return $_SERVER["DOCUMENT_ROOT"].__WEB_ROOT.'/'.__GALLERY_ROOT.'/'.__IMAGE_FOLDER.'/'.__ITEM_FOLDER.'/'.$itemId;
 	}
 	
 	public static function getThumbForImage($folderDirectory){
-		return str_replace($_SERVER["DOCUMENT_ROOT"].'/'.__GALLERY_ROOT.'/'.__IMAGE_FOLDER, 
-						$_SERVER["DOCUMENT_ROOT"].'/'.__GALLERY_ROOT.'/'.__THUMB_FOLDER, 
+		return str_replace($_SERVER["DOCUMENT_ROOT"].__WEB_ROOT.'/'.__GALLERY_ROOT.'/'.__IMAGE_FOLDER, 
+						$_SERVER["DOCUMENT_ROOT"].__WEB_ROOT.'/'.__GALLERY_ROOT.'/'.__THUMB_FOLDER, 
 						$folderDirectory);
 	}
 	
 	public static function getImageForThumb($folderDirectory){
-		return str_replace($_SERVER["DOCUMENT_ROOT"].'/'.__GALLERY_ROOT.'/'.__THUMB_FOLDER,
-				$_SERVER["DOCUMENT_ROOT"].'/'.__GALLERY_ROOT.'/'.__IMAGE_FOLDER,
+		return str_replace($_SERVER["DOCUMENT_ROOT"].__WEB_ROOT.'/'.__GALLERY_ROOT.'/'.__THUMB_FOLDER,
+				$_SERVER["DOCUMENT_ROOT"].__WEB_ROOT.'/'.__GALLERY_ROOT.'/'.__IMAGE_FOLDER,
 				$folderDirectory);
 	}
 	
 	public static function getUrlForDirectory($folderDirectory){
-		$folderUrl = str_replace($_SERVER["DOCUMENT_ROOT"].'/'.__GALLERY_ROOT, 
+		$folderUrl = str_replace($_SERVER["DOCUMENT_ROOT"].__WEB_ROOT.'/'.__GALLERY_ROOT, 
 									__WEB_ROOT.'/'.__GALLERY_ROOT, 
 									$folderDirectory);
 		return $folderUrl;

@@ -1,4 +1,9 @@
 @font-face {
-    font-family: "OpenSans-Regular";
+    font-family: "Josefin Slab";
+    src: url(../plugins/google-fonts/Josefin_Slab/JosefinSlab-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Open Sans";
     src: url(../plugins/google-fonts/Open_Sans/OpenSans-Regular.ttf) format("truetype");
 }

@@ -1,7 +1,7 @@
 <div class="brand">
 		<img alt="Logo" src="static/img/logo.gif" id="logo-img" />Velvet Fitting
-	</div>
-	<div class="address-bar">Passionate Bathing...</div>
+</div>
+<div class="address-bar">Passionate Bathing...</div>
 
 	<!-- Navigation -->
 	<nav class="navbar navbar-default" role="navigation">

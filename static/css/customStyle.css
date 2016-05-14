@@ -5,15 +5,6 @@
  */
  
  
-@font-face {
-    font-family: "Josefin Slab";
-    src: url(../plugins/google-fonts/Josefin_Slab/JosefinSlab-Regular.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Open Sans";
-    src: url(../plugins/google-fonts/Open_Sans/OpenSans-Regular.ttf) format("truetype");
-}
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -137,9 +128,9 @@ footer p {
     .brand {
         display: inherit;
         margin: 0;
-        padding: 30px 0 10px;
+        padding: 30px 0px 2px 0px;
         text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-shadow: 3px 3px 5px #000;
         font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 5em;
         font-weight: 700;
@@ -159,9 +150,9 @@ footer p {
     .address-bar {
         display: inherit;
         margin: 0;
-        padding: 0 0 40px;
+        padding: 0px 0px 20px 0px;
         text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-shadow: 3px 3px 2px #000;
         text-transform: uppercase;
         font-size: 1.25em;
         font-weight: 400;
@@ -188,7 +179,7 @@ footer p {
     }
 
     .nav>li>a {
-        padding: 35px;
+        padding: 25px 35px;
     }
 
     .navbar-nav>li>a {
