@@ -1,10 +1,11 @@
 <div class="brand">
-		<img alt="Logo" src="static/img/logo.gif" id="logo-img" />Velvet Fitting
+		<img alt="Logo" src="static/img/logo.gif" id="logo-img" />
+		<span class="brand-inr"><span class="brand-span">Velvet Fitting</span><br/><span class="address-bar-span">Passionate Bathing...</span></span>
 </div>
-<div class="address-bar">Passionate Bathing...</div>
+<!-- <div class="address-bar">Passionate Bathing...</div> -->
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-default" role="navigation">
+	<nav id="home-navbar" class="navbar navbar-default" role="navigation">
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
