@@ -48,7 +48,7 @@ if(__ENV=="PRODUCTION"){
 	define ('__APP_DB_HOST', "localhost");
 	define ('__APP_DB_USER', "root");
 	define ('__APP_DB_PSWD', "root");
-	define ('__APP_SCHEMA', "authentic_stones_db");
+	define ('__APP_SCHEMA', "velvet_db");
 	/******************************************************************/
 	
 	/********************** Mailing Constants ************************/
@@ -87,7 +87,7 @@ if(__ENV=="PRODUCTION"){
 	define ('__APP_DB_HOST', "localhost");
 	define ('__APP_DB_USER', "root");
 	define ('__APP_DB_PSWD', "root");
-	define ('__APP_SCHEMA', "authentic_stones_db");
+	define ('__APP_SCHEMA', "velvet_db");
 	/******************************************************************/
 	
 	/********************** Mailing Constants ************************/

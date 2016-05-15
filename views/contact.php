@@ -31,11 +31,7 @@
 					<hr>
 				</div>
 				<div class="col-md-8">
-					<!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577248.8111883737!2d77.63693241337063!3d28.886250082968193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew+Delhi%2C+Delhi+110001!5e0!3m2!1sen!2sin!4v1463052424477"
-						width="100%" height="400" frameborder="0" scrolling="no"
-						marginheight="0" marginwidth="0" allowfullscreen></iframe>
+					<div id="map"></div>
 				</div>
 				<div class="col-md-4">
 					<h6>
@@ -60,6 +56,9 @@
 	<?php include "footer.php"; ?>
 
 	<?php include "footer_includes.php"; ?>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=&sensor=false"></script>
+	<script src="<?php echo __WEB_ROOT?>/static/js/contactus.js"></script>
 
 
 </body>

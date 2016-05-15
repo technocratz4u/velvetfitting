@@ -10,47 +10,93 @@
 <title>Velvet Fitting - PRIME CREATIONS Products</title>
 
 <?php include "header_includes.php"; ?>
-
+	<?php
+	$productDetails = $model;
+	?>
 
 </head>
 
 <body>
 
 	<?php include "header.php"; ?>
-
-	<div class="container">
+	
+	<div class="container" id="page-container">
 
 		<div class="row">
 			<div class="box">
-				<div class="col-lg-12">
+				<div class="col-md-8 col-sm-6 col-xs-12">
+					<div id="mainImage" class="zoomframe zoomin">
+						<img
+							src="<?php echo $productDetails["images"]["image_url"][__FRONT_IMAGE_NAME]?>"
+							alt="" class="img-responsive" id="product-image">
+					</div>
+				</div>
+				<div class="clearfix visible-xs-block"></div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<h3><?php echo $productDetails["item_name"].' ('.$productDetails["category_name"].')'?></h3>
+					<h4><?php echo $productDetails["item_code"]?></h4>
+					<p>&nbsp;</p>
+					<p> <?php echo $productDetails["description"]?><a href="#details"
+							id="goTo"><i><small>...View More</small></i></a>
+					</p>
+					<p>&nbsp;</p>
 					<hr>
-					<h2 class="intro-text text-center">
-						Contact <strong>PRIME CREATIONS</strong>
-						<br><small> An ISO 9001 : 2008 Certified Company</small>
-					</h2>
-					<hr>
+					<div class="media">
+						<div class="media-body">
+						 <a href='javascript:addToCart(<?php echo $productDetails["item_name"]?>);'
+								class="btn btn-dark"><i class="fa fa-shopping-cart"></i> Add to
+								Enquiry List</a>
+							<p>&nbsp;</p>
+							<p>Show it to your friends</p>
+							<p>
+								<a href="#" class="external facebook" data-animate-hover="pulse"><i
+									class="fa fa-facebook"></i></a> <a href="#"
+									class="external gplus" data-animate-hover="pulse"><i
+									class="fa fa-google-plus"></i></a> <a href="#"
+									class="external twitter" data-animate-hover="pulse"><i
+									class="fa fa-twitter"></i></a> <a href="#" class="email"
+									data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+							</p>
+						</div>
+					</div>
+					<p>&nbsp;</p>
+					<hr class="hidden-md hidden-lg">
 				</div>
-				<div class="col-md-8">
-					<!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577248.8111883737!2d77.63693241337063!3d28.886250082968193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew+Delhi%2C+Delhi+110001!5e0!3m2!1sen!2sin!4v1463052424477"
-						width="100%" height="400" frameborder="0" scrolling="no"
-						marginheight="0" marginwidth="0" allowfullscreen></iframe>
-				</div>
-				<div class="col-md-4">
-					<h6>
-						Address: B-23, DSIDC Compound, Jhilmil Industrial Area,
-							Shahdara, Delhi - 110095, India
-					</h6>
-					<h6>
-						Key Personnel: Mr. Sachin Aggarwal (Partner)
-					</h6>
-					<h6>
-						Contact: 91-11-22135206, +919999885214
-					</h6>
-				</div>
+
 				<div class="clearfix"></div>
+				<div class="row" id="details">
+					<div class="col-xs-12 col-md-8">
+						<div class="table-responsive">
+							<table class="table table-bordered table-hover">
+								<thead>
+									<tr id="info">
+										<th colspan="2">Additional Information</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Description</td>
+										<td><?php echo $productDetails["description"]?></td>
+									</tr>
+									<tr>
+										<td>Item Code</td>
+										<td><?php echo $productDetails["item_code"]?></td>
+									</tr>
+									<tr>
+										<td>Series Name</td>
+										<td><?php echo $productDetails["category_name"]?></td>
+									</tr>
+
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+					<div class="col-xs-12 col-md-4"></div>
+				</div>
 			</div>
+
 		</div>
 
 	</div>
