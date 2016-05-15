@@ -20,7 +20,7 @@
 
 	<!-- Home page content start -->
 
-	<div class="container">
+	<div class="container" id="page-container">
 
 		<div class="row">
 			<div class="box">
