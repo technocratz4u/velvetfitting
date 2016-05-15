@@ -132,6 +132,86 @@ footer p {
     color: #777;
 }
 
+#faucets-img{
+	margin-top: 10px;
+}
+
+.box-title{
+	font-size: 1.8em;
+	color: #333333;
+}
+
+.btn-dark { 
+	transition: all 0.2s ease-out 0s;
+	color: #ffffff; 
+	background-color: #333333; 
+	border-color: #000000; 
+  
+  	background-image: -ms-linear-gradient(top, #333333 0%, #0F0F0F 100%);  /* IE10 */ 
+	background-image: -moz-linear-gradient(top, #333333 0%, #0F0F0F 100%); /* Mozilla Firefox */ 
+	background-image: -o-linear-gradient(top, #333333 0%, #0F0F0F 100%); /* Opera */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#0F0F0F)); /* Webkit (Safari/Chrome 10) */ 
+	/* background-image: -webkit-linear-gradient(left top, ###333333 0%, ###0F0F0F 100%); */ /* Webkit (Chrome 11+) */ 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#0F0F0F'); /* for IE */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#333333, endColorstr=#0F0F0F)";
+	background-image: linear-gradient(top, #333333 0%, #0F0F0F 100%); /* Proposed W3C Markup */
+	
+	background-repeat:no-repeat;
+	
+} 
+ 
+.btn-dark:hover, 
+.btn-dark:focus, 
+.btn-dark:active, 
+.btn-dark.active, 
+.open .dropdown-toggle.btn-dark { 
+  color: #ffffff; 
+  background-color: #020103; 
+  border-color: #000000; 
+  
+  	background-image: -ms-linear-gradient(top, #111111 0%, #000000 100%);  /* IE10 */ 
+	background-image: -moz-linear-gradient(top, #111111 0%, #000000 100%); /* Mozilla Firefox */ 
+	background-image: -o-linear-gradient(top, #111111 0%, #000000 100%); /* Opera */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#111111), to(#000000)); /* Webkit (Safari/Chrome 10) */ 
+	/* background-image: -webkit-linear-gradient(left top, ####111111 0%, ####000000 100%); */ /* Webkit (Chrome 11+) */ 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111', endColorstr='#000000'); /* for IE */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#111111, endColorstr=#000000)";
+	background-image: linear-gradient(top, #111111 0%, #000000 100%); /* Proposed W3C Markup */
+	
+	background-repeat:no-repeat;
+} 
+ 
+.btn-dark:active, 
+.btn-dark.active, 
+.open .dropdown-toggle.btn-dark { 
+  background-image: none; 
+} 
+ 
+.btn-dark.disabled, 
+.btn-dark[disabled], 
+fieldset[disabled] .btn-dark, 
+.btn-dark.disabled:hover, 
+.btn-dark[disabled]:hover, 
+fieldset[disabled] .btn-dark:hover, 
+.btn-dark.disabled:focus, 
+.btn-dark[disabled]:focus, 
+fieldset[disabled] .btn-dark:focus, 
+.btn-dark.disabled:active, 
+.btn-dark[disabled]:active, 
+fieldset[disabled] .btn-dark:active, 
+.btn-dark.disabled.active, 
+.btn-dark[disabled].active, 
+fieldset[disabled] .btn-dark.active { 
+  background-color: #111; 
+  border-color: #000000; 
+} 
+ 
+.btn-dark .badge { 
+  color: #111; 
+  background-color: #ffffff; 
+}
+
+
 @media screen and (min-width:768px) {
     .brand {
         display: inherit;
@@ -210,6 +290,26 @@ footer p {
         margin: 0 auto;
         table-layout: fixed;
         font-size: 1.25em;
+    }
+    
+    .product-first-para{
+    	overflow: hidden;
+		text-overflow: ellipsis;
+		max-height: 201px;
+    }
+    
+    .product-second-para{
+    	display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .product-first-para{
+		max-height: none;
+    }
+    
+    .product-second-para{
+    	display: inherit;
     }
 }
 

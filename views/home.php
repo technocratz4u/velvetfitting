@@ -49,29 +49,25 @@
 				<div class="col-lg-12">
 					<hr>
 					<h2 class="intro-text text-center">
-						Build a website <strong>worth visiting</strong>
+						Get to know <strong>Our Products</strong>
 					</h2>
 					<hr>
-					<img class="img-responsive img-border img-left"
-						src="img/intro-pic.jpg" alt="">
-					<hr class="visible-xs">
-					<p>The boxes used in this template are nested inbetween a normal
-						Bootstrap row and the start of your column layout. The boxes will
-						be full-width boxes, so if you want to make them smaller then you
-						will need to customize.</p>
-					<p>
-						A huge thanks to <a href="http://join.deathtothestockphoto.com/"
-							target="_blank">Death to the Stock Photo</a> for allowing us to
-						use the beautiful photos that make this template really come to
-						life. When using this template, make sure your photos are decent.
-						Also make sure that the file size on your photos is kept to a
-						minumum to keep load times to a minimum.
-					</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-						placerat diam quis nisl vestibulum dignissim. In hac habitasse
-						platea dictumst. Interdum et malesuada fames ac ante ipsum primis
-						in faucibus. Pellentesque habitant morbi tristique senectus et
-						netus et malesuada fames ac turpis egestas.</p>
+					<div class="row">
+						<div class="col-sm-6">
+							<p class="box-title"><strong>Faucets</strong></p>
+							<p class="product-first-para">Velvet Fitting faucets provide an unmatched experience with their unparalleled quality and performance. 
+								Our in-house state of the art design team is completely integrated to produce 60000 faucets per day. 
+								Our best in class manufacturing units are backed by a world class testing lab to enable
+								Velvet Fitting faucets conform to the highest quality and regulatory standards.</p>
+							<p class="product-second-para">Velvet Fitting’s passion for perfection reflects in the 10 years of warranty it extends on its faucets. 
+								Our faucets comprise of 29 ranges to suit various design needs ranging from faucets in single-lever, quarter turn and multi-turn operation.</p>
+							
+							<a href="#" class="btn btn-dark" style="margin:10px 0px 23px 0px;">Read More »</a>
+						</div>
+						<div class="col-sm-6">
+							<img alt="Faucets" class="img-responsive" src="<?php echo __WEB_ROOT?>/static/img/kitchen-faucet-bg-pulldowninline.jpg" id="faucets-img" />
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -1,5 +1,5 @@
 <div class="brand">
-		<img alt="Logo" src="static/img/logo.gif" id="logo-img" />
+		<img alt="Logo" src="<?php echo __WEB_ROOT?>/static/img/logo.gif" id="logo-img" />
 		<span class="brand-inr"><span class="brand-span">Velvet Fitting</span><br/><span class="address-bar-span">Passionate Bathing...</span></span>
 </div>
 <!-- <div class="address-bar">Passionate Bathing...</div> -->
