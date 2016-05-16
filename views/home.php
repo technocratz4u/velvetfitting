@@ -18,6 +18,10 @@
 <body>
 
 	<?php include "header.php"; ?>
+	<?php 
+		$homePageDetails = $model;
+		//print_r($homePageDetails);
+	?>
 	
 	<div class="container" id="page-container">
 
@@ -80,16 +84,29 @@
 				<div class="col-lg-12">
 					<hr>
 					<h2 class="intro-text text-center">
-						Beautiful boxes <strong>to showcase your content</strong>
+						Our products which are <strong>most popular</strong>
 					</h2>
 					<hr>
-					<p>Use as many boxes as you like, and put anything you want in
-						them! They are great for just about anything, the sky's the limit!</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-						placerat diam quis nisl vestibulum dignissim. In hac habitasse
-						platea dictumst. Interdum et malesuada fames ac ante ipsum primis
-						in faucibus. Pellentesque habitant morbi tristique senectus et
-						netus et malesuada fames ac turpis egestas.</p>
+					<div id="hot-this-week-carousel" class="owl-carousel">
+	                	<?php
+	                		if(isset($homePageDetails["hot_this_week"]) && sizeof($homePageDetails["hot_this_week"])>0){
+	                			foreach ($homePageDetails["hot_this_week"] as $hotThisWeekDetailsIndex => $hotThisWeekDetailsElem) {
+	                	?>
+	                		<div class="item">
+			                	<div class="product">
+			                		<div class="hot-this-week-img-container zoomframe zoomin">
+			                			<img src="<?php echo $hotThisWeekDetailsElem["images"]["thumb_url"][__FRONT_IMAGE_NAME] ?>" alt="" class="img-responsive">
+			                		</div>
+			                		<div class="text">
+		                                <h3><a href="<?php echo __WEB_ROOT."/product/view/".$hotThisWeekDetailsElem["item_url_pattern"]."/".$hotThisWeekDetailsElem["item_id"] ?>"><?php echo $hotThisWeekDetailsElem["item_name"] ?><br/>(<?php echo $hotThisWeekDetailsElem["item_code"] ?>)</a></h3>
+		                            </div>
+			                	</div>
+			                </div>
+	                	<?php		
+	                			}
+	                		}
+						?>
+		              </div>
 				</div>
 			</div>
 		</div>

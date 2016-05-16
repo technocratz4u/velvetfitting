@@ -7,6 +7,21 @@ $(document).ready(function() {
 		stopOnHover : true
     });
 	
+	$("#hot-this-week-carousel").owlCarousel({
+
+		items : 4, //5 items above 1000px browser width
+
+		itemsDesktop : [ 1199, 4 ],
+		itemsDesktopSmall : [ 979, 3 ],
+		itemsTablet : [ 768, 2 ],
+		itemsTabletSmall : false,
+		itemsMobile : [ 479, 1 ],
+
+		autoPlay : true,
+		stopOnHover : true
+
+	});
+	
 	//$("#faucets-img").magnify();
 	$("#faucets-img").mlens({
 		imgSrc: $(this).attr("data-big"),	  // path of the hi-res version of the image
@@ -23,4 +38,6 @@ $(document).ready(function() {
 		zoomLevel: 1,          // zoom level multiplicator (number)
 		responsive: true       // true if mlens has to be responsive (boolean)
 	});
+	
+	
 });
