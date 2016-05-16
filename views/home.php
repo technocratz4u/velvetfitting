@@ -65,7 +65,10 @@
 							<a href="#" class="btn btn-dark" style="margin:10px 0px 23px 0px;">Read More »</a>
 						</div>
 						<div class="col-sm-6">
-							<img alt="Faucets" class="img-responsive" src="<?php echo __WEB_ROOT?>/static/img/kitchen-faucet-bg-pulldowninline.jpg" id="faucets-img" />
+							<img alt="Faucets" class="img-responsive" id="faucets-img" 
+							src="<?php echo __WEB_ROOT?>/static/img/kitchen-faucet-bg-pulldowninline.jpg" 
+							data-big="<?php echo __WEB_ROOT?>/static/img/kitchen-faucet-bg-pulldowninline.jpg" 
+							data-big2x="<?php echo __WEB_ROOT?>/static/img/kitchen-faucet-bg-pulldowninline.jpg" />
 						</div>
 					</div>
 				</div>
@@ -98,6 +101,8 @@
 	<?php include "footer.php"; ?>
 
 	<?php include "footer_includes.php"; ?>
+	
+	<script src="<?php echo __WEB_ROOT?>/static/plugins/jquery-magnify-zoom/jquery.mlens-1.6.min.js"></script>
 	
 	<script src="<?php echo __WEB_ROOT?>/static/js/home.js"></script>
 
