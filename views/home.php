@@ -70,9 +70,9 @@
 						</div>
 						<div class="col-sm-6 col-lg-5">
 							<img alt="Faucets" class="img-responsive" id="faucets-img" 
-							src="<?php echo __WEB_ROOT?>/static/img/sprinkle.jpg" 
-							data-big="<?php echo __WEB_ROOT?>/static/img/sprinkle.jpg" 
-							data-big2x="<?php echo __WEB_ROOT?>/static/img/sprinkle.jpg" />
+							src="<?php echo __WEB_ROOT?>/static/img/Frisbee-Design-Waterfall-LED-Faucet.jpeg" 
+							data-big="<?php echo __WEB_ROOT?>/static/img/Frisbee-Design-Waterfall-LED-Faucet.jpeg" 
+							data-big2x="<?php echo __WEB_ROOT?>/static/img/Frisbee-Design-Waterfall-LED-Faucet.jpeg" />
 						</div>
 					</div>
 				</div>
@@ -129,7 +129,7 @@
 							</ul>
 						</div>
 						<div class="col-md-2" id="buy-from-us-banner">
-							<img class="img-responsive" id="buy-from-us-img" src="<?php echo __WEB_ROOT?>/static/img/Frisbee-Design-Waterfall-LED-Faucet.jpeg" alt="Why Buy from Us">
+							<img class="img-responsive" id="buy-from-us-img" src="<?php echo __WEB_ROOT?>/static/img/kitchen-faucet-bg-pulldowninline.jpg" alt="Why Buy from Us">
 						</div>
 						<div class="col-md-5 buy-from-us-list">
 							<ul>
