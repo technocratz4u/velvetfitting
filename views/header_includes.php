@@ -22,4 +22,4 @@
 <link href="<?php echo __WEB_ROOT?>/static/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
 
 <!-- Custom CSS -->
-<link href="<?php echo __WEB_ROOT?>static/css/customStyle.css" rel="stylesheet">
+<link href="<?php echo __WEB_ROOT?>/static/css/customStyle.css" rel="stylesheet">
