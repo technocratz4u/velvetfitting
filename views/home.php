@@ -57,7 +57,7 @@
 					</h2>
 					<hr>
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-sm-6 col-lg-7">
 							<p class="box-title"><strong>Faucets</strong></p>
 							<p class="product-first-para">Velvet Fitting faucets provide an unmatched experience with their unparalleled quality and performance. 
 								Our in-house state of the art design team is completely integrated to produce 60000 faucets per day. 
@@ -68,11 +68,11 @@
 							
 							<a href="#" class="btn btn-dark" style="margin:10px 0px 23px 0px;">Read More »</a>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-sm-6 col-lg-5">
 							<img alt="Faucets" class="img-responsive" id="faucets-img" 
-							src="<?php echo __WEB_ROOT?>/static/img/kitchen-faucet-bg-pulldowninline.jpg" 
-							data-big="<?php echo __WEB_ROOT?>/static/img/kitchen-faucet-bg-pulldowninline.jpg" 
-							data-big2x="<?php echo __WEB_ROOT?>/static/img/kitchen-faucet-bg-pulldowninline.jpg" />
+							src="<?php echo __WEB_ROOT?>/static/img/sprinkle.jpg" 
+							data-big="<?php echo __WEB_ROOT?>/static/img/sprinkle.jpg" 
+							data-big2x="<?php echo __WEB_ROOT?>/static/img/sprinkle.jpg" />
 						</div>
 					</div>
 				</div>
@@ -107,6 +107,38 @@
 	                		}
 						?>
 		              </div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="box">
+				<div class="col-lg-12">
+					<hr>
+					<h2 class="intro-text text-center">
+						Why <strong>buy from us</strong> ?
+					</h2>
+					<hr>
+					<div class="row" id="buy-from-us-body">
+						<div class="col-md-5 buy-from-us-list">
+							<ul>
+								<li>Easy modes of payment - suitable for all</li>
+								<li>Experienced manpower - best in class</li>
+								<li>Products of high quality - state of the art</li>
+								<li>Rich vendor base - we serve them all</li>
+							</ul>
+						</div>
+						<div class="col-md-2" id="buy-from-us-banner">
+							<img class="img-responsive" id="buy-from-us-img" src="<?php echo __WEB_ROOT?>/static/img/Frisbee-Design-Waterfall-LED-Faucet.jpeg" alt="Why Buy from Us">
+						</div>
+						<div class="col-md-5 buy-from-us-list">
+							<ul>
+								<li>Timely deliveries - on time every time</li>
+								<li>Transparent dealings - you get what you see</li>
+								<li>Wide distribution network - we are always nearby</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
