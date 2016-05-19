@@ -40,7 +40,7 @@
 					<h4><?php echo $productDetails["item_code"]?></h4>
 					<div class="media">
 						<div class="media-body">
-						 <a href='javascript:addToCart(<?php echo $productDetails["item_name"]?>);'
+						 <a href="#" onclick ='addToEnquiryList("<?php echo $productDetails["item_name"].' ('.$productDetails["category_name"].')-'.$productDetails["item_code"]?>")'
 								class="btn btn-dark"><i class="fa fa-shopping-cart"></i> Add to
 								Enquiry List</a>
 							<p>&nbsp;</p>
