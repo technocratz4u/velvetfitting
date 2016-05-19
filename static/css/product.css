@@ -1,34 +1,69 @@
-
-#goTo {
-	color: #989898;
+#map {
+  height: 400px;
 }
 
-#goTo:hover{
+#product-image{
+	height:550px;
+	
+}
+
+#category_items_carousel .item{
+    padding: 20px 10px;
+    margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    border: 2px solid #CCC;
+    
+    background-image: -ms-linear-gradient(top, #EFEFEF 0%, #F8F8F8 100%);  /* IE10 */ 
+	background-image: -moz-linear-gradient(top, #EFEFEF 0%, #F8F8F8 100%); /* Mozilla Firefox */ 
+	background-image: -o-linear-gradient(top, #EFEFEF 0%, #F8F8F8 100%); /* Opera */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#EFEFEF), to(#F8F8F8)); /* Webkit (Safari/Chrome 10) */ 
+	/* background-image: -webkit-linear-gradient(left top, ##EFEFEF 0%, #F8F8F8 100%); */ /* Webkit (Chrome 11+) */ 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EFEFEF', endColorstr='#F8F8F8'); /* for IE */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#EFEFEF, endColorstr=#F8F8F8)";
+	background-image: linear-gradient(top, #EFEFEF 0%, #F8F8F8 100%); /* Proposed W3C Markup */
+}
+
+#category_items_carousel .product{
+	box-sizing: border-box;
+	color: #555;
+}
+
+#category_items_carousel .item img{
+	border-radius: 5px;
+	border: 1px solid #CCCCCC;	
+}	
+#category_items_carousel .product .text{
+	padding: 10px 10px 0px;
+}
+
+#category_items_carousel .product .text h3{
+	font-size: 18px;
+	height: 42px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#category_items_carousel .product .text h3 a{
+	color: #555;
+}
+
+#category_items_carousel .product .text h3 a:hover{
 	color: #000;
 }
 
-#info {
-	background-color: #989898;
-	color: #fff;
+#category_items_carousel .product .text p.price{
+	font-size: 18px;
+	text-align: center;
+	font-weight: 300;
+	display: inline-block;
 }
-
-.buy-from-us-img {
-	max-height: 50px;
-}
-
-#product-quantity {
-	max-width: 60px;
-	margin-right: 2%;
-}
-
-#thumbs a {
-  display: block;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-  border: solid 2px transparent;
-  margin-bottom: 10%;
-}
-
-#thumbs a.active {
-  border-color: #989898;
+#category_items_carousel .product .text del{
+	color: #999;
+	display: inline-block;
+	padding-right: 10px;
+	font-size: 18px;
 }

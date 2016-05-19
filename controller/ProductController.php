@@ -1,6 +1,7 @@
 <?php
 
 include __SITE_PATH . '/service/utils/AlbumUtil.php' ;
+include __SITE_PATH . '/service/utils/UrlUtil.php' ;
 
 Class ProductController Extends BaseController {
 
@@ -26,6 +27,7 @@ Class ProductController Extends BaseController {
 
 private function getProductDetails($itemId){
 	$productDetails = array();
+	$productDetails["category_items"] = array();
 
 	$query = " call ".__APP_SCHEMA.".proc_get_item_details(:item_id) ";
 	$queryArgs = array(":item_id"=>$itemId);
@@ -42,8 +44,21 @@ private function getProductDetails($itemId){
 			$productDetails["description"] = $r["description"];	
 			$productDetails["images"] = AlbumUtil::getImagesForItem($r["item_id"]);
 		}
+		
 	}
-
+	$stmt->nextRowset();
+	$results = $stmt->fetchAll();
+	if ($results) {
+		foreach ($results as $r) {
+				$categoryItems = array();
+				$categoryItems["item_id"] = $r["item_id"];
+				$categoryItems["item_code"] = $r["item_code"];
+				$categoryItems["item_name"] = $r["item_name"];
+				$categoryItems["item_url_pattern"] = UrlUtil::getUrlPattern($r["item_name"]);
+				$categoryItems["images"] = AlbumUtil::getImagesForItem($r["item_id"]);
+				array_push ( $productDetails ["category_items"], $categoryItems );
+		}
+	}
 	return 	$productDetails;
 }
 

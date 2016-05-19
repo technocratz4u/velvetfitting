@@ -9,6 +9,8 @@
 
 <title>Velvet Fitting - PRIME CREATIONS Products</title>
 
+<link href="<?php echo __WEB_ROOT?>/static/css/product.css" rel="stylesheet" />
+
 <?php include "header_includes.php"; ?>
 	<?php
 	$productDetails = $model;
@@ -19,12 +21,13 @@
 <body>
 
 	<?php include "header.php"; ?>
+
 	
 	<div class="container" id="page-container">
 
 		<div class="row">
 			<div class="box">
-				<div class="col-md-8 col-sm-6 col-xs-12">
+				<div class="col-md-7 col-sm-6 col-xs-12">
 					<div id="mainImage" class="zoomframe zoomin">
 						<img
 							src="<?php echo $productDetails["images"]["image_url"][__FRONT_IMAGE_NAME]?>"
@@ -32,15 +35,9 @@
 					</div>
 				</div>
 				<div class="clearfix visible-xs-block"></div>
-				<div class="col-xs-12 col-sm-6 col-md-4">
+				<div class="col-xs-12 col-sm-6 col-md-5">
 					<h3><?php echo $productDetails["item_name"].' ('.$productDetails["category_name"].')'?></h3>
 					<h4><?php echo $productDetails["item_code"]?></h4>
-					<p>&nbsp;</p>
-					<p> <?php echo $productDetails["description"]?><a href="#details"
-							id="goTo"><i><small>...View More</small></i></a>
-					</p>
-					<p>&nbsp;</p>
-					<hr>
 					<div class="media">
 						<div class="media-body">
 						 <a href='javascript:addToCart(<?php echo $productDetails["item_name"]?>);'
@@ -59,42 +56,38 @@
 							</p>
 						</div>
 					</div>
-					<p>&nbsp;</p>
-					<hr class="hidden-md hidden-lg">
 				</div>
 
 				<div class="clearfix"></div>
-				<div class="row" id="details">
-					<div class="col-xs-12 col-md-8">
-						<div class="table-responsive">
-							<table class="table table-bordered table-hover">
-								<thead>
-									<tr id="info">
-										<th colspan="2">Additional Information</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Description</td>
-										<td><?php echo $productDetails["description"]?></td>
-									</tr>
-									<tr>
-										<td>Item Code</td>
-										<td><?php echo $productDetails["item_code"]?></td>
-									</tr>
-									<tr>
-										<td>Series Name</td>
-										<td><?php echo $productDetails["category_name"]?></td>
-									</tr>
-
-								</tbody>
-							</table>
-
-						</div>
-					</div>
-					<div class="clearfix visible-xs-block"></div>
-					<div class="col-xs-12 col-md-4"></div>
-				</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<hr>
+					<h2 class="intro-text text-center">
+						Other products in this <strong><?php echo $productDetails["category_name"]?></strong>
+					</h2>
+					<hr>
+					<div id="category_items_carousel" class="owl-carousel">
+	                	<?php
+	                		if(isset($productDetails["category_items"]) && sizeof($productDetails["category_items"])>0){
+	                			foreach ($productDetails["category_items"] as $itemsCategoryIndex => $itemsCategoryElem) {
+	                	?>
+	                		<div class="item">
+			                	<div class="product">
+			                		<div class="hot-this-week-img-container zoomframe zoomin">
+			                			<img src="<?php echo $itemsCategoryElem["images"]["thumb_url"][__FRONT_IMAGE_NAME] ?>" alt="" class="img-responsive">
+			                		</div>
+			                		<div class="text">
+		                                <h3><a href="<?php echo __WEB_ROOT."/product/view/".$itemsCategoryElem["item_url_pattern"]."/".$itemsCategoryElem["item_id"] ?>"><?php echo $itemsCategoryElem["item_name"] ?><br/>(<?php echo $itemsCategoryElem["item_code"] ?>)</a></h3>
+		                            </div>
+			                	</div>
+			                </div>
+	                	<?php		
+	                			}
+	                		}
+						?>
+		              </div>
+			</div>
+		</div>
 			</div>
 
 		</div>
@@ -106,6 +99,8 @@
 	<?php include "footer.php"; ?>
 
 	<?php include "footer_includes.php"; ?>
+	
+	<script src="<?php echo __WEB_ROOT?>/static/js/product.js"></script>
 
 
 </body>

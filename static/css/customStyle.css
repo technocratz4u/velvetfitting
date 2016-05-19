@@ -538,8 +538,9 @@ fieldset[disabled] .btn-dark.active {
     transform:scale(1.25);
 }
 
-#map {
-  height: 400px;
-}
 
+
+.topmrgntbl{
+	
+}
 /** zoom feature end **/
