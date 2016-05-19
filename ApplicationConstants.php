@@ -15,6 +15,7 @@ define ('__GALLERY_ROOT', "__gallery");
 define ('__IMAGE_FOLDER', "image");
 define ('__THUMB_FOLDER', "thumb");
 define ('__ITEM_FOLDER', "item");
+define ('__CATEGORY_FOLDER', "category");
 
 define ('__FRONT_IMAGE_NAME', "front");
 define ('__BACK_IMAGE_NAME', "back");
