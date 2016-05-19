@@ -29,15 +29,15 @@ class IndexController extends BaseController {
 		$results = $stmt->fetchAll();
 		if ($results) {
 			foreach ($results as $r) {
-				$categoryItems = array();
-	
-				$categoryItems["item_id"] = $r["item_id"];
-				$categoryItems["item_code"] = $r["item_code"];
-				$categoryItems["item_name"] = $r["item_name"];
-				$categoryItems["item_url_pattern"] = UrlUtil::getUrlPattern($r["item_name"]);
-				$categoryItems["images"] = AlbumUtil::getImagesForItem($r["item_id"]);
-	
-				$homePageDetails["category_items"][] = $categoryItems;
+				$hotThisWeekDetail = array();
+				
+				$hotThisWeekDetail["item_id"] = $r["item_id"];
+				$hotThisWeekDetail["item_code"] = $r["item_code"];
+				$hotThisWeekDetail["item_name"] = $r["item_name"];
+				$hotThisWeekDetail["item_url_pattern"] = UrlUtil::getUrlPattern($r["item_name"]);
+				$hotThisWeekDetail["images"] = AlbumUtil::getImagesForItem($r["item_id"]);
+				
+				$homePageDetails["hot_this_week"][] = $hotThisWeekDetail;
 			}
 		}
 	

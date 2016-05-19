@@ -320,6 +320,15 @@ li.first-subctgr{
 	color: #000;
 }
 
+#copyright-row{
+	border-top:1px solid #999;
+	margin-top:20px;
+	padding: 10px 0px;
+}
+
+#footer-info-row{
+	padding-top:10px;
+}
 
 .btn-dark { 
 	transition: all 0.2s ease-out 0s;
@@ -536,11 +545,5 @@ fieldset[disabled] .btn-dark.active {
     -ms-transform:scale(1.25); /* IE 9 */
     -o-transform:scale(1.25); /* Opera */
     transform:scale(1.25);
-}
-
-
-
-.topmrgntbl{
-	
 }
 /** zoom feature end **/
