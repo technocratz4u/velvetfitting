@@ -35,6 +35,7 @@
 #category_items_carousel .item img{
 	border-radius: 5px;
 	border: 1px solid #CCCCCC;	
+	margin: 0px auto;
 }	
 #category_items_carousel .product .text{
 	padding: 10px 10px 0px;
