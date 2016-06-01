@@ -203,7 +203,7 @@ footer p {
 }
 
 .buy-from-us-list ul {
-	padding-left:178px;
+	padding-left:98px;
 }
 
 .buy-from-us-list > ul > li{
@@ -328,6 +328,24 @@ li.first-subctgr{
 
 #footer-info-row{
 	padding-top:10px;
+}
+
+.send-inquiry-link{
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+	/* IE */
+	-ms-transform: rotate(-90deg);
+	/* Opera */
+	-o-transform: rotate(-90deg);
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+	position:fixed;
+	top: 50%;
+	right: -39px;
+	z-index: 200;
 }
 
 .btn-dark { 
@@ -501,11 +519,11 @@ fieldset[disabled] .btn-dark.active {
     .product-second-para{
     	display: inherit;
     }
-    
+
     .buy-from-us-list ul {
     	padding-left:20px;
     }
-    
+        
     .buy-from-us-list > ul > li{
     	line-height: 32px;
     }
@@ -517,11 +535,11 @@ fieldset[disabled] .btn-dark.active {
         display: table;
         clear: both;
     }
-    
+
     .buy-from-us-list ul {
     	padding-left:40px;
     }
-    
+        
     .buy-from-us-list > ul > li{
     	line-height: 42px;
     }

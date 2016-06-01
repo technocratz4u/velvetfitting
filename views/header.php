@@ -32,3 +32,5 @@
 		</div>
 		<!-- /.container -->
 	</nav>
+
+	<a href="<?php echo __WEB_ROOT?>/inquire" class="btn btn-dark send-inquiry-link">Send Inquiry</a>
