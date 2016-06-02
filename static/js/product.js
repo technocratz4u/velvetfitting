@@ -19,18 +19,18 @@ $(document).ready(function() {
 
 //add an item to the cart
 function addToEnquiryList(item) {
-
+	var items;
 	if (typeof (localStorage["enquireList"]) != "undefined" && (localStorage["enquireList"]).length > 0) {
-		var items = JSON.parse(localStorage.getItem("enquireList"));
+		items = JSON.parse(localStorage.getItem("enquireList"));
+	} else {
+		items = [];
+	}
+	
+	if($.inArray(item, items)==-1){
 		items.push(item);
 		localStorage.setItem("enquireList", JSON.stringify(items));
-
-	} else {
-		var items = [];
-		items[0] = item;
-		localStorage.setItem("enquireList", JSON.stringify(items));
-
 	}
+	
 	//console.log("localStorage",localStorage);
 
 }
