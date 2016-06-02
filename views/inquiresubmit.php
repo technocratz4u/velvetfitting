@@ -39,7 +39,7 @@
 					if($restStatus["STATUS"]=="SUCCESS"){
 				?>
 					<div class="col-md-8 col-md-offset-2" style="text-align: center;">
-						<div class="alert alert-success" role="alert">Thanks for showing interest. Velvet-Fittings will contact you soon.</div>
+						<div class="alert alert-success" role="alert">Thanks for showing interest. <?php echo __APPLICATION_NAME?> will contact you soon.</div>
 						<div class="row">
 							<div class="col-lg-12">
 								<a href="<?php echo __WEB_ROOT?>/category" class="btn btn-dark" style="margin:20px 0px;">Continue Browsing »</a>
@@ -73,8 +73,6 @@
 
 	<?php include "footer_includes.php"; ?>
 	
-	<script src="<?php echo __WEB_ROOT?>/static/js/inquire.js"></script>
-
 
 </body>
 </html>

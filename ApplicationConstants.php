@@ -54,12 +54,12 @@ if(__ENV=="PRODUCTION"){
 	
 	/********************** Mailing Constants ************************/
 	define ('__MY_MAIL_NAME', __APPLICATION_NAME);
-	define ('__MY_MAIL_ID', "devteam@myapp.com");
+	define ('__MY_MAIL_ID', "technocratz4u@gmail.com"); // Velvet Fitting Admin Email
 	define ('__MY_SMTP_HOST', "ssl://smtp.gmail.com");
 	define ('__MY_SMTP_PORT', 465);
 	define ('__MY_SMTP_AUTH', true);
-	define ('__MY_SMTP_USER', "ju.manikandan@gmail.com");
-	define ('__MY_SMTP_PSWD', "VEerabahu@007");
+	define ('__MY_SMTP_USER', "technocratz4u@gmail.com");
+	define ('__MY_SMTP_PSWD', "earnmoney");
 	/******************************************************************/
 	
 	/********************** Paypal Constants ************************/
@@ -93,12 +93,12 @@ if(__ENV=="PRODUCTION"){
 	
 	/********************** Mailing Constants ************************/
 	define ('__MY_MAIL_NAME', __APPLICATION_NAME);
-	define ('__MY_MAIL_ID', "devteam@myapp.com");
+	define ('__MY_MAIL_ID', "technocratz4u@gmail.com"); // Velvet Fitting Admin Email
 	define ('__MY_SMTP_HOST', "ssl://smtp.gmail.com");
 	define ('__MY_SMTP_PORT', 465);
 	define ('__MY_SMTP_AUTH', true);
-	define ('__MY_SMTP_USER', "ju.manikandan@gmail.com");
-	define ('__MY_SMTP_PSWD', "VEerabahu@007");
+	define ('__MY_SMTP_USER', "technocratz4u@gmail.com");
+	define ('__MY_SMTP_PSWD', "earnmoney");
 	/******************************************************************/
 	
 	/********************** Paypal Constants ************************/

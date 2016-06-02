@@ -40,8 +40,8 @@
 					<h4><?php echo $productDetails["item_code"]?></h4>
 					<div class="media">
 						<div class="media-body">
-						 <a href="#" onclick ='addToEnquiryList("<?php echo $productDetails["item_name"].' ('.$productDetails["category_name"].')-'.$productDetails["item_code"]?>")'
-								class="btn btn-dark"><i class="fa fa-shopping-cart"></i> Add to
+						 <a href="javascript:void(0);" onclick ='addToEnquiryList("<?php echo $productDetails["item_name"].' ('.$productDetails["category_name"].')-'.$productDetails["item_code"]?>")'
+								class="btn btn-dark"><i class="fa fa-question-circle"></i> Add to
 								Enquiry List</a>
 							<p>&nbsp;</p>
 							<p>Show it to your friends</p>

@@ -61,17 +61,17 @@ class EmailUtil{
 				
 			if (PEAR::isError($mail)) {
 				$mailingStatus = false;
-				echo "false mailingStatus --- ".$mailingStatus;
-				echo "_______________________";
+				//echo "false mailingStatus --- ".$mailingStatus;
+				//echo "_______________________";
 				error_log( "false mailingStatus --- ".$mailingStatus );
-				print_r($mail);
+				//print_r($mail);
 			} else {
 				$mailingStatus = true;
-				echo "true mailingStatus --- ".$mailingStatus;
-				echo "_______________________";
-				print_r($mail);
+				//echo "true mailingStatus --- ".$mailingStatus;
+				//echo "_______________________";
+				//print_r($mail);
 			}
-			echo "mailingStatus --- ".$mailingStatus;
+			//echo "mailingStatus --- ".$mailingStatus;
 			
 		}catch (Exception $e){
 			$mailingStatus = false;
