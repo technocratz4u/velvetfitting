@@ -36,7 +36,7 @@
 				<div class="col-md-12">
 					<p>We are a prominent Exporter, Manufacturer, Wholesaler /
 						Distributor, Supplier, Trader, Importer of a quality approved
-						array of Bathroom Fittings & Accessories. Our catered array
+						array of Bathroom Fittings &amp; Accessories. Our catered array
 						includes Bathroom Taps, Bathroom Tap Fitting, Brass Bathroom Taps,
 						Shower Heads, Shower Taps, Faucets, Shower, Basin Faucets Taps,
 						Single Hole Basin Taps and many more. These products are
@@ -49,7 +49,7 @@
 
 					<p>Business Type: Exporter, Manufacturer, Wholesaler / Distributor,
 						Supplier, Trader, Importer</p>
-					<p>Primary Competitive Advantages:
+					<p>Primary Competitive Advantages:</p>
 					
 					
 					<ul>
@@ -62,9 +62,9 @@
 						<li><font size="2" face="verdana,arial,helvetica,sans-serif">Rich
 								vendor base</font></li>
 					</ul>
-					</p>
+					
 					<p>Year of Establishment: 2009</p>
-					<p>Product Range:
+					<p>Product Range:</p>
 					
 					
 					<ul>
@@ -91,7 +91,7 @@
 						<li>Single Lever Center Hole Basin Mixer</li>
 						<li>Towel Hanger</li>
 					</ul>
-					</p>
+					
 
 					<p>
 						<strong> &quot;We mainly deal with bulk quantity order
