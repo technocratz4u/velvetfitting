@@ -6,8 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
+<meta name="robots" content="noindex">
 
-<title>Contact Velvet Fitting - PRIME CREATIONS</title>
+<title>Velvet Fitting - PRIME CREATIONS - Unauthorized Page</title>
 
 <?php include "header_includes.php"; ?>
 
