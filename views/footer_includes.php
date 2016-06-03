@@ -9,4 +9,4 @@
 <script src="<?php echo __WEB_ROOT?>/static/plugins/bootstrap-3.3.6/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
 
 <!-- Owl Carousel Script -->
-<script src="<?php echo __WEB_ROOT?>/static/plugins/owl-carousel/owl.carousel.js"></script>
+<script src="<?php echo __WEB_ROOT?>/static/plugins/owl-carousel/owl.carousel.min.js"></script>
