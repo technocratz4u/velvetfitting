@@ -1,12 +1,10 @@
 <?php
 
-/*
  if ($_SERVER['HTTP_HOST'] != 'ubuntu-vbox'){
- header("HTTP/1.1 301 Moved Permanently");
- header("Location: http://ubuntu-vbox".$_SERVER['REQUEST_URI']);
+ 	header("HTTP/1.1 301 Moved Permanently");
+ 	header("Location: http://ubuntu-vbox".$_SERVER['REQUEST_URI']);
  }
- */
-// echo $_SERVER['HTTP_HOST']."---".$_SERVER["REQUEST_URI"]."---".$_SERVER["QUERY_STRING"];
+
 
 /*** error reporting on ***/
 ini_set("error_reporting", E_ALL & ~E_STRICT);
