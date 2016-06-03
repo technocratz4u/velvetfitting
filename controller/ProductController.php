@@ -17,7 +17,8 @@ Class ProductController Extends BaseController {
 			$this->registry->template->model = $productDetails;
 			$this->registry->template->show('product');
 		}else{
-			$this->registry->template->show('_404error');
+		 	header("HTTP/1.1 301 Moved Permanently");
+		 	header("Location: ".__APPLICATION_URL."/category");
 		}	
 }
 
