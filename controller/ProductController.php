@@ -5,18 +5,14 @@ include __SITE_PATH . '/service/utils/UrlUtil.php' ;
 
 Class ProductController Extends BaseController {
 
-	public function index() {
-		$this->registry->template->show ( 'product' );
-	}
-	
-	public function view(){
+	public function index(){
 		/*** get the route from the url ***/
 		$route = (empty($_GET['rt'])) ? '' : $_GET['rt'];
 		/*** get the parts of the route ***/
 		$parts = explode('/', $route);
 		$itemId = null;
-		if(sizeof($parts)>=4 && isset($parts[3]) && !empty($parts[3])){
-			$itemId = $parts[3];
+		if(sizeof($parts)>=3 && isset($parts[2]) && !empty($parts[2])){
+			$itemId = $parts[2];
 			$productDetails = $this->getProductDetails($itemId);
 			$this->registry->template->model = $productDetails;
 			$this->registry->template->show('product');
@@ -41,6 +37,7 @@ private function getProductDetails($itemId){
 			$productDetails["category_name"] = $r["category_name"];
 			$productDetails["item_code"] = $r["item_code"];
 			$productDetails["item_name"] = $r["item_name"];
+			$productDetails["item_name_url_pattern"] = UrlUtil::getUrlPattern($r["item_name"]);
 			$productDetails["description"] = $r["description"];	
 			$productDetails["images"] = AlbumUtil::getImagesForItem($r["item_id"]);
 		}

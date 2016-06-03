@@ -7,14 +7,17 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
+<?php
+	$productDetails = $model;
+?>
+
+<link rel="canonical" href="<?php echo __APPLICATION_URL."/product"."/".$productDetails["item_name_url_pattern"]."/".$productDetails["item_id"]?>" />
+
 <title>Velvet Fitting - PRIME CREATIONS Products</title>
 
 <link href="<?php echo __WEB_ROOT?>/static/css/product.css" rel="stylesheet" />
 
 <?php include "header_includes.php"; ?>
-	<?php
-	$productDetails = $model;
-	?>
 
 </head>
 
@@ -77,7 +80,7 @@
 			                			<img src="<?php echo $itemsCategoryElem["images"]["thumb_url"][__FRONT_IMAGE_NAME] ?>" alt="" class="img-responsive">
 			                		</div>
 			                		<div class="text">
-		                                <h3><a href="<?php echo __WEB_ROOT."/product/view/".$itemsCategoryElem["item_url_pattern"]."/".$itemsCategoryElem["item_id"] ?>"><?php echo $itemsCategoryElem["item_name"] ?><br/>(<?php echo $itemsCategoryElem["item_code"] ?>)</a></h3>
+		                                <h3><a href="<?php echo __WEB_ROOT."/product/".$itemsCategoryElem["item_url_pattern"]."/".$itemsCategoryElem["item_id"] ?>"><?php echo $itemsCategoryElem["item_name"] ?><br/>(<?php echo $itemsCategoryElem["item_code"] ?>)</a></h3>
 		                            </div>
 			                	</div>
 			                </div>
