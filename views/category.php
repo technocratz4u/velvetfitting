@@ -7,9 +7,24 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<link rel="canonical" href="<?php echo __APPLICATION_URL?>/category" />
+<?php 
+	if (isset($model)){
+		$categoryPageDetails = $model;
+	}
+?>
 
-<title>Velvet Fitting - PRIME CREATIONS product categories</title>
+<?php 
+	if (isset($categoryPageDetails["selected_sub_category_id"])){
+?>
+	<link rel="canonical" href="<?php echo __APPLICATION_URL."/category"."/".$categoryPageDetails["selected_sub_category_url_pattern"]."/".$categoryPageDetails["selected_sub_category_id"]?>" />
+<?php		
+	}else{
+?>
+	<link rel="canonical" href="<?php echo __APPLICATION_URL?>/category" />
+<?php		
+	}
+?>
+<title>Velvet Fitting - PRIME CREATIONS product category</title>
 
 <?php include "header_includes.php"; ?>
 
@@ -20,14 +35,6 @@
 
 	<?php include "header.php"; ?>
 	
-	<?php 
-		if (isset($model)){
-			$categoryPageDetails = $model;
-			//print_r($categoryPageDetails);
-			//print_r($categoryPageDetails["category_details"]["4"]["sub_category_details"]);
-		}
-	?>
-
 	<!-- Home page content start -->
 
 	<div class="container" id="page-container">

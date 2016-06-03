@@ -47,6 +47,10 @@ Class CategoryController Extends BaseController {
 				}
 				
 				if(!isset($categoryPageDetails["category_details"][$r["category_id"]]["sub_category_details"][$r["sub_category_id"]])){
+					// if this is the selected subcategory, fetch the sub_category_url_pattern to be used as part of rel=canonical
+					if($r["sub_category_id"]==$subCategoryId){
+						$categoryPageDetails["selected_sub_category_url_pattern"] = UrlUtil::getUrlPattern($r["sub_category_name"]);
+					}
 					$categoryPageDetails["category_details"][$r["category_id"]]["sub_category_details"][$r["sub_category_id"]] = array();
 					$categoryPageDetails["category_details"][$r["category_id"]]["sub_category_details"][$r["sub_category_id"]]["sub_category_id"] = $r["sub_category_id"];
 					$categoryPageDetails["category_details"][$r["category_id"]]["sub_category_details"][$r["sub_category_id"]]["sub_category_name"] = $r["sub_category_name"];
