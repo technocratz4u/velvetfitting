@@ -23,13 +23,8 @@ class UrlUtil{
 	}
 	
 	public static function getUrlPattern($name){
-		$urlPattern = strtolower(str_replace(" ", "-", $name));
+		$urlPattern = rawurlencode(strtolower(str_replace("/", "-", str_replace(" ", "-", $name))));
 		return $urlPattern;
-	}
-	
-	public static function getNamePattern($urlPattern){
-		$name = ucfirst(str_replace("-", " ", $urlPattern));
-		return $name;
 	}
 	
 } /*** end of class ***/
