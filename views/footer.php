@@ -3,7 +3,7 @@
 		<div class="row" id="footer-info-row">
 			<div class="col-xs-3">
 				<h4>Pages</h4>
-				<a href="<?php echo __WEB_ROOT?>/">Home</a><br> 
+				<a href="<?php echo __APPLICATION_URL?>">Home</a><br> 
 				<a href="<?php echo __WEB_ROOT?>/category">Products</a><br> 
 				<a href="<?php echo __WEB_ROOT?>/about">About us</a><br> 
 				<a href="<?php echo __WEB_ROOT?>/contact">Contact us</a><br> 

@@ -22,8 +22,8 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="<?php echo __WEB_ROOT?>" class="active">Home</a></li>
-					<li><a href="<?php echo __WEB_ROOT?>/product">Products</a></li>
+					<li><a href="<?php echo __APPLICATION_URL?>" class="active">Home</a></li>
+					<li><a href="<?php echo __WEB_ROOT?>/category">Products</a></li>
 					<li><a href="<?php echo __WEB_ROOT?>/about">About</a></li>
 					<li><a href="<?php echo __WEB_ROOT?>/contact">Contact</a></li>
 				</ul>
