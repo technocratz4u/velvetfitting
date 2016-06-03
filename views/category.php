@@ -7,6 +7,8 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
+<link rel="canonical" href="<?php echo __APPLICATION_URL?>/category" />
+
 <title>Velvet Fitting - PRIME CREATIONS product categories</title>
 
 <?php include "header_includes.php"; ?>
@@ -138,22 +140,6 @@
 								}
 								?>
 							</div>
-							<p>We are a prominent Exporter, Manufacturer, Wholesaler /
-								Distributor, Supplier, Trader, Importer of a quality approved
-								array of Bathroom Fittings  Accessories. Our catered array
-								includes Bathroom Taps, Bathroom Tap Fitting, Brass Bathroom Taps,
-								Shower Heads, Shower Taps, Faucets, Shower, Basin Faucets Taps,
-								Single Hole Basin Taps and many more. These products are
-								manufactured using best quality components and employing advanced
-								technology at our manufacturing facility. Clients widely
-								appreciate the products offered by us following to their beautiful
-								design, shape, dimension and alluring look. Being fitted in
-								numerous hospital, hotel and houses, our ranges are widely
-								acclaimed in abroad countries also.</p>
-		
-							<p>Business Type: Exporter, Manufacturer, Wholesaler / Distributor,
-								Supplier, Trader, Importer</p>
-							
 		
 						</div>
 					</div>
