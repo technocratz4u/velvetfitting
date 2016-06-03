@@ -9,6 +9,8 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
+<link rel="canonical" href="<?php echo __APPLICATION_URL?>" />
+
 <title>Velvet Fitting - PRIME CREATIONS</title>
 	
 	<?php include "header_includes.php"; ?>

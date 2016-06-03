@@ -38,7 +38,7 @@ if(__ENV=="PRODUCTION"){
 	define ('__APPLICATION_NAME', "Velvet Fitting");
 	
 	define ('__SERVER_NAME', ""); // to be changed during deployment
-	define ('__APPLICATION_URL', "http://".__SERVER_NAME.__WEB_ROOT);
+	define ('__APPLICATION_URL', "http://www.".__SERVER_NAME.__WEB_ROOT);
 	
 	define ('__ORDER_STATUS_CREATED', "CREATED");
 	define ('__ORDER_STATUS_PENDING', "PENDING");
@@ -76,7 +76,7 @@ if(__ENV=="PRODUCTION"){
 	define ('__WEB_ROOT', "");
 	define ('__APPLICATION_NAME', "Velvet Fitting");
 	
-	define ('__SERVER_NAME', "localhost"); // to be changed during deployment
+	define ('__SERVER_NAME', "ubuntu-vbox"); // to be changed during deployment
 	define ('__APPLICATION_URL', "http://".__SERVER_NAME.__WEB_ROOT);
 	
 	define ('__ORDER_STATUS_CREATED', "CREATED");
