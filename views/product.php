@@ -4,16 +4,15 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
 
 <?php
 	$productDetails = $model;
 ?>
 
+<meta name="description" content="<?php echo $productDetails["item_name"]?> manufacturer, Velvet Fitting - PRIME CREATIONS, one of the largest bathroom fitting manufacturer cum supplier, classy and affordable faucet based out of Delhi, India">
 <link rel="canonical" href="<?php echo __APPLICATION_URL."/product"."/".$productDetails["item_name_url_pattern"]."/".$productDetails["item_id"]?>" />
 
-<title>Velvet Fitting - PRIME CREATIONS Products</title>
+<title><?php echo $productDetails["item_name"]?> Manufacturer | <?php echo $productDetails["category_name"]?> | Velvet Fitting Product</title>
 
 <link href="<?php echo __WEB_ROOT?>/static/css/product.css" rel="stylesheet" />
 

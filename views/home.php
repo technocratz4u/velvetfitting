@@ -6,12 +6,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="description" content="Velvet Fitting - PRIME CREATIONS bathroom fitting manufacturer cum supplier, view online catalog of high quality and affordable faucet based out of Delhi, India">
 
 <link rel="canonical" href="<?php echo __APPLICATION_URL?>" />
 
-<title>Velvet Fitting - PRIME CREATIONS</title>
+<title>Bathroom Fitting Manufacturer | Faucet Supplier | Velvet Fitting</title>
 	
 	<?php include "header_includes.php"; ?>
 

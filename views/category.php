@@ -4,8 +4,6 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
 
 <?php 
 	if (isset($model)){
@@ -16,15 +14,18 @@
 <?php 
 	if (isset($categoryPageDetails["selected_sub_category_id"])){
 ?>
+	<meta name="description" content="<?php echo $categoryPageDetails["selected_sub_category_name"]?> manufacturer, Velvet Fitting - PRIME CREATIONS, online catalog of one of the largest bathroom fitting manufacturer cum supplier, classy and affordable faucet based out of Delhi, India">
 	<link rel="canonical" href="<?php echo __APPLICATION_URL."/category"."/".$categoryPageDetails["selected_sub_category_url_pattern"]."/".$categoryPageDetails["selected_sub_category_id"]?>" />
+	<title><?php echo $categoryPageDetails["selected_sub_category_name"]?> | Bathroom Fitting | Online Catalog | Velvet Fitting</title>
 <?php		
 	}else{
 ?>
+	<meta name="description" content="Velvet Fitting - PRIME CREATIONS, online catalog of one of the largest bathroom fitting manufacturer cum supplier, classy and affordable faucet based out of Delhi, India">
 	<link rel="canonical" href="<?php echo __APPLICATION_URL?>/category" />
+	<title>Bathroom Fitting Manufacturer | Online Catalog | Velvet Fitting</title>
 <?php		
 	}
 ?>
-<title>Velvet Fitting - PRIME CREATIONS product category</title>
 
 <?php include "header_includes.php"; ?>
 
