@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	
+	var itemsSelected = "";
 	if (typeof (localStorage["enquireList"]) != "undefined" && (localStorage["enquireList"]).length > 0) {
-		var itemsSelected = "";
 		var items = JSON.parse(localStorage.getItem("enquireList"));
 		for(var i=0;i<items.length;i++){
 			if(itemsSelected.length>0){

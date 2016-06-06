@@ -294,6 +294,7 @@ li.first-subctgr{
 	border-radius: 5px;
 	border: 1px solid #AAAAAA;	
 	margin: 0px auto;
+	height: 200px;
 }	
 
 #category-list-container .item img:hover{
@@ -318,6 +319,11 @@ li.first-subctgr{
 
 #category-list-container .product .text h3 a:hover{
 	color: #000;
+}
+
+#mainImage img{
+	padding: 20px;
+	margin: 0px auto;
 }
 
 #copyright-row{
