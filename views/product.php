@@ -9,7 +9,7 @@
 	$productDetails = $model;
 ?>
 
-<meta name="description" content="<?php echo $productDetails["item_name"]?> manufacturer, Velvet Fitting - PRIME CREATIONS, one of the largest bathroom fitting manufacturer cum supplier, classy and affordable faucet based out of Delhi, India">
+<meta name="description" content="<?php echo $productDetails["item_name"]?> manufacturer, Velvet Fitting - PRIME CREATIONS, largest bathroom fitting manufacturer cum supplier, classy and affordable faucet based out of Delhi, India">
 <link rel="canonical" href="<?php echo __APPLICATION_URL."/product"."/".$productDetails["item_name_url_pattern"]."/".$productDetails["item_id"]?>" />
 
 <title><?php echo $productDetails["item_name"]?> Manufacturer | <?php echo $productDetails["category_name"]?> | Velvet Fitting Product</title>
