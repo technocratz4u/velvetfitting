@@ -166,6 +166,7 @@ footer p {
 	border-radius: 5px;
 	border: 1px solid #AAAAAA;	
 	margin: 0px auto;
+	height: 200px;
 }	
 
 #hot-this-week-carousel .item img:hover{
