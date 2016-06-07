@@ -106,7 +106,28 @@
 				"name": "<?php echo str_replace("\"", " INCH", $productDetails["item_name"])?>"
 			    }
 			}]
-		    }
+		    },
+			"mainEntity": {
+				"@context": "http://schema.org",
+    			"@type": "Product",
+			    "name": "<?php echo str_replace("\"", " INCH", $productDetails["item_name"])?>",
+			    "description": "<?php echo str_replace("\"", " INCH", $productDetails["item_name"])?> is one of the finest products manufactured by Velvet Fitting - PRIME CREATIONS",
+			    "url": "<?php echo __APPLICATION_URL."/product"."/".$productDetails["item_name_url_pattern"]."/".$productDetails["item_id"]?>",
+				"image": "<?php echo __APPLICATION_URL.$productDetails["images"]["image_url"][__FRONT_IMAGE_NAME]?>",
+				"productID":"<?php echo $productDetails["item_code"]?>",
+				"brand": {
+				   	"@type": "Brand",
+				   	"name": "Velvet Fitting",
+					"description": "The best quality and most affordable bathroom fitting and faucet brand",
+				  	"url": "http://www.velvetfitting.com",
+				   	"logo": "http://www.velvetfitting.com/logo.jpg",
+					"image": "http://www.example.com/images/logo.png",
+				   	"sameAs": ["http://www.facebook.com/example",
+					"http://www.twitter.com/example",
+					"http://plus.google.com/example"
+				    ]
+				}
+			}
 		}
 	]
 </script>
