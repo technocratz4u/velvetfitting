@@ -8,10 +8,17 @@
 
 <link rel="canonical" href="<?php echo __APPLICATION_URL?>/contact" />
 
-<title>Bathroom Fitting Manufacturer | Faucet Supplier | About | Velvet Fitting</title>
+<title>Bathroom Fitting Manufacturer | Faucet Supplier | Contact | Velvet Fitting</title>
 
 <?php include "header_includes.php"; ?>
 
+<script type="application/ld+json">
+	[
+	<?php include "json-ld/jsonld_local_business.php"; ?>,
+	<?php include "json-ld/jsonld_website.php"; ?>,
+	<?php include "json-ld/jsonld_contact_page.php"; ?>
+	]
+</script>
 
 </head>
 

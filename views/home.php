@@ -12,7 +12,14 @@
 
 <title>Bathroom Fitting Manufacturer | Faucet Supplier | Velvet Fitting</title>
 	
-	<?php include "header_includes.php"; ?>
+<?php include "header_includes.php"; ?>
+
+<script type="application/ld+json">
+	[
+	<?php include "json-ld/jsonld_local_business.php"; ?>,
+	<?php include "json-ld/jsonld_website.php"; ?>
+	]
+</script>
 
 </head>
 
