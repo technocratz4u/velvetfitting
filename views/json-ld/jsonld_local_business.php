@@ -8,8 +8,9 @@
 	"image": "http://www.example.com/images/logo.png",
     "address": {
         "@type": "PostalAddress",
+        "addressCountry": "India",
         "addressLocality": "Shahdara",
-        "addressRegion": "DL",
+        "addressRegion": "Delhi",
         "postalCode": "110095",
         "streetAddress": "B-23, DSIDC Compound, Jhilmil Industrial Area"
     },
