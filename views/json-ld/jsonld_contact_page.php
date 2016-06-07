@@ -19,7 +19,7 @@
             "position": 2,
             "item": {
                 "@id": "http://www.velvetfitting.com/contact",
-                "name": "Contact Velvet Fitting - PRIME CREATIONS"
+                "name": "Contact"
             }
         }]
     }
