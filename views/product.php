@@ -9,14 +9,107 @@
 	$productDetails = $model;
 ?>
 
-<meta name="description" content="<?php echo $productDetails["item_name"]?> manufacturer, Velvet Fitting - PRIME CREATIONS, largest bathroom fitting manufacturer cum supplier, classy and affordable faucet based out of Delhi, India">
+<meta name="description" content="Product detail of <?php echo $productDetails["item_name"]?> manufactured by Velvet Fitting - PRIME CREATIONS, largest bathroom fitting manufacturer cum supplier, classy and affordable faucet based out of Delhi, India">
 <link rel="canonical" href="<?php echo __APPLICATION_URL."/product"."/".$productDetails["item_name_url_pattern"]."/".$productDetails["item_id"]?>" />
 
-<title><?php echo $productDetails["item_name"]?> Manufacturer | <?php echo $productDetails["category_name"]?> | Velvet Fitting Product</title>
+<title><?php echo $productDetails["item_name"]?> | <?php echo $productDetails["category_name"]?> Product | Velvet Fitting Product</title>
 
 <link href="<?php echo __WEB_ROOT?>/static/css/product.css" rel="stylesheet" />
 
 <?php include "header_includes.php"; ?>
+
+<script type="application/ld+json">
+	[
+	<?php include "json-ld/jsonld_local_business.php"; ?>,
+	<?php include "json-ld/jsonld_website.php"; ?>,
+	{
+    	"@context": "http://schema.org",
+    	"@type": "Product",
+    	"name": "<?php echo str_replace("\"", " INCH", $productDetails["item_name"])?>",
+    	"description": "<?php echo str_replace("\"", " INCH", $productDetails["item_name"])?> is one of the finest products manufactured by Velvet Fitting - PRIME CREATIONS",
+    	"url": "<?php echo __APPLICATION_URL."/product"."/".$productDetails["item_name_url_pattern"]."/".$productDetails["item_id"]?>",
+		"image": "<?php echo __APPLICATION_URL.$productDetails["images"]["image_url"][__FRONT_IMAGE_NAME]?>",
+		"productID":"<?php echo $productDetails["item_code"]?>",
+		"brand": {
+            "@type": "Brand",
+            "name": "Velvet Fitting",
+            "description": "The best quality and most affordable bathroom fitting and faucet brand",
+            "url": "http://www.velvetfitting.com",
+            "logo": "http://www.velvetfitting.com/logo.jpg",
+			"image": "http://www.example.com/images/logo.png",
+            "sameAs": ["http://www.facebook.com/example",
+                "http://www.twitter.com/example",
+                "http://plus.google.com/example"
+            ]
+        },
+		"isRelatedTo" : [
+		
+					<?php
+                		if(isset($productDetails["category_items"]) && sizeof($productDetails["category_items"])>0){
+                			foreach ($productDetails["category_items"] as $itemsCategoryIndex => $itemsCategoryElem) {
+                	?>
+						<?php
+							if($itemsCategoryIndex>0){
+						?>
+								,
+						<?php
+							}
+						?>
+						{
+    						"@context": "http://schema.org",
+					    	"@type": "Product",
+					    	"name": "<?php echo str_replace("\"", " INCH", $itemsCategoryElem["item_name"])?>",
+					    	"description": "<?php echo str_replace("\"", " INCH", $itemsCategoryElem["item_name"])?> is one of the finest products manufactured by Velvet Fitting - PRIME CREATIONS",
+					    	"url": "<?php echo __APPLICATION_URL."/product"."/".$itemsCategoryElem["item_url_pattern"]."/".$itemsCategoryElem["item_id"]?>",
+							"image": "<?php echo __APPLICATION_URL.$itemsCategoryElem["images"]["image_url"][__FRONT_IMAGE_NAME]?>",
+							"productID":"<?php echo $itemsCategoryElem["item_code"]?>",
+							"brand": {
+							    "@type": "Brand",
+							    "name": "Velvet Fitting",
+							    "description": "The best quality and most affordable bathroom fitting and faucet brand",
+							    "url": "http://www.velvetfitting.com",
+							    "logo": "http://www.velvetfitting.com/logo.jpg",
+								"image": "http://www.example.com/images/logo.png",
+							    "sameAs": ["http://www.facebook.com/example",
+								"http://www.twitter.com/example",
+								"http://plus.google.com/example"
+							    ]
+							}
+						}
+	                <?php		
+                			}
+                		}
+					?>
+
+		]
+	}, {
+    		"@context": "http://schema.org",
+		    "@type": "ItemPage",
+		    "name": "Product detail page for <?php echo str_replace("\"", " INCH", $productDetails["item_name"])?>",
+		    "description": "Product detail of <?php echo str_replace("\"", " INCH", $productDetails["item_name"])?> manufactured by Velvet Fitting - PRIME CREATIONS, largest bathroom fitting manufacturer cum supplier, classy and affordable faucet based out of Delhi, India",
+		    "url": "<?php echo __APPLICATION_URL."/product"."/".$productDetails["item_name_url_pattern"]."/".$productDetails["item_id"]?>",
+			"image": "<?php echo __APPLICATION_URL.$productDetails["images"]["image_url"][__FRONT_IMAGE_NAME]?>",
+		    "breadcrumb": {
+			"@type": "BreadcrumbList",
+			"itemListElement": [{
+			    "@type": "ListItem",
+			    "position": 1,
+			    "item": {
+				"@id": "http://www.velvetfitting.com",
+				"name": "Home"
+			    }
+			}, {
+			    "@type": "ListItem",
+			    "position": 2,
+			    "item": {
+				"@id": "<?php echo __APPLICATION_URL."/product"."/".$productDetails["item_name_url_pattern"]."/".$productDetails["item_id"]?>",
+				"name": "<?php echo str_replace("\"", " INCH", $productDetails["item_name"])?>"
+			    }
+			}]
+		    }
+		}
+	]
+</script>
 
 </head>
 
