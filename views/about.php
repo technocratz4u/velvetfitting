@@ -12,6 +12,13 @@
 
 <?php include "header_includes.php"; ?>
 
+<script type="application/ld+json">
+	[
+	<?php include "json-ld/jsonld_local_business.php"; ?>,
+	<?php include "json-ld/jsonld_website.php"; ?>,
+	<?php include "json-ld/jsonld_about_page.php"; ?>
+	]
+</script>
 
 </head>
 
