@@ -22,14 +22,36 @@
 ?>
 	<meta name="description" content="Velvet Fitting - PRIME CREATIONS, online catalog of the largest bathroom fitting manufacturer cum supplier, classy and affordable faucet based out of Delhi, India">
 	<link rel="canonical" href="<?php echo __APPLICATION_URL?>/category" />
-	<title>Bathroom Fitting Manufacturer | Online Catalog | Velvet Fitting</title>
+	<title>Online Catalog | Bathroom Fitting | Faucet | Velvet Fitting</title>
 <?php		
 	}
 ?>
 
 <?php include "header_includes.php"; ?>
 
+<script type="application/ld+json">
+	[
+	<?php include "json-ld/jsonld_local_business.php"; ?>,
+	<?php include "json-ld/jsonld_website.php"; ?>,
+	<?php include "json-ld/jsonld_category_collection_page.php"; ?>
+	<?php 
+		if (isset($categoryPageDetails["selected_sub_category_id"])){
+	?>
+	,<?php include "json-ld/jsonld_category.php"; ?>
+	<?php		
+		}
+	?>
 
+	]
+</script>
+
+<?php 
+	if (isset($categoryPageDetails["selected_sub_category_id"])){
+?>
+
+<?php		
+	}
+?>
 </head>
 
 <body>
