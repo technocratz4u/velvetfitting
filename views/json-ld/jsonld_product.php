@@ -10,7 +10,12 @@
     	"url": "<?php echo __APPLICATION_URL."/product"."/".$productDetails["item_name_url_pattern"]."/".$productDetails["item_id"]?>",
 		"image": "<?php echo __APPLICATION_URL.$productDetails["images"]["image_url"][__FRONT_IMAGE_NAME]?>",
 		"productID":"<?php echo $productDetails["item_code"]?>",
-		"category": "<?php echo "Faucet > ".$productDetails["category_name"]?>",
+		"category": {
+			"@type": "Thing",
+			"name": "<?php echo $productDetails["category_name"]?>",
+			"url": "<?php echo __APPLICATION_URL."/category"."/".$productDetails["category_name_url_pattern"]."/".$productDetails["category_id"]?>",
+			"image": "<?php echo __APPLICATION_URL.$productDetails["category_images"]["image_url"][__FRONT_IMAGE_NAME]?>"
+		},
 		"brand": {
             "@type": "Brand",
             "name": "Velvet Fitting",
@@ -44,6 +49,12 @@
 					    	"url": "<?php echo __APPLICATION_URL."/product"."/".$itemsCategoryElem["item_url_pattern"]."/".$itemsCategoryElem["item_id"]?>",
 							"image": "<?php echo __APPLICATION_URL.$itemsCategoryElem["images"]["image_url"][__FRONT_IMAGE_NAME]?>",
 							"productID":"<?php echo $itemsCategoryElem["item_code"]?>",
+							"category": {
+								"@type": "Thing",
+								"name": "<?php echo $itemsCategoryElem["category_name"]?>",
+								"url": "<?php echo __APPLICATION_URL."/category"."/".$itemsCategoryElem["category_name_url_pattern"]."/".$itemsCategoryElem["category_id"]?>",
+								"image": "<?php echo __APPLICATION_URL.$itemsCategoryElem["category_images"]["image_url"][__FRONT_IMAGE_NAME]?>"
+							},
 							"brand": {
 							    "@type": "Brand",
 							    "name": "Velvet Fitting",

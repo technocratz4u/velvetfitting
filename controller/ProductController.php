@@ -36,6 +36,9 @@ private function getProductDetails($itemId){
 		foreach ($results as $r) {
 			$productDetails["item_id"] = $r["item_id"];
 			$productDetails["category_name"] = $r["category_name"];
+			$productDetails["category_id"] = $r["category_id"];
+			$productDetails["category_name_url_pattern"] = UrlUtil::getUrlPattern($r["category_name"]);
+			$productDetails["category_images"] = AlbumUtil::getImagesForCategory($r["category_id"]);
 			$productDetails["item_code"] = $r["item_code"];
 			$productDetails["item_name"] = $r["item_name"];
 			$productDetails["item_name_url_pattern"] = UrlUtil::getUrlPattern($r["item_name"]);
@@ -54,6 +57,9 @@ private function getProductDetails($itemId){
 				$categoryItems["item_name"] = $r["item_name"];
 				$categoryItems["item_url_pattern"] = UrlUtil::getUrlPattern($r["item_name"]);
 				$categoryItems["images"] = AlbumUtil::getImagesForItem($r["item_id"]);
+				$categoryItems["category_name"] = $r["category_name"];
+				$categoryItems["category_id"] = $r["category_id"];
+				$categoryItems["category_images"] = AlbumUtil::getImagesForCategory($r["category_id"]);
 				array_push ( $productDetails ["category_items"], $categoryItems );
 		}
 	}
