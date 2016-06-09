@@ -106,7 +106,7 @@
 			                			<img src="<?php echo $hotThisWeekDetailsElem["images"]["thumb_url"][__FRONT_IMAGE_NAME] ?>" alt="" class="img-responsive">
 			                		</div>
 			                		<div class="text">
-		                                <h3><a href="<?php echo __WEB_ROOT."/product/".$hotThisWeekDetailsElem["item_url_pattern"]."/".$hotThisWeekDetailsElem["item_id"] ?>"><?php echo $hotThisWeekDetailsElem["item_name"] ?><br/>(<?php echo $hotThisWeekDetailsElem["item_code"] ?>)</a></h3>
+		                                <a href="<?php echo __WEB_ROOT."/product/".$hotThisWeekDetailsElem["item_url_pattern"]."/".$hotThisWeekDetailsElem["item_id"] ?>"><?php echo $hotThisWeekDetailsElem["item_name"] ?><br/>(<?php echo $hotThisWeekDetailsElem["item_code"] ?>)</a>
 		                            </div>
 			                	</div>
 			                </div>

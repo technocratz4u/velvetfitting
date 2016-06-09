@@ -15,45 +15,40 @@
     -moz-border-radius: 3px;
     border-radius: 3px;
     text-align: center;
-    border: 2px solid #CCC;
+    border: 1px solid #CCC;
     
-    background-image: -ms-linear-gradient(top, #EFEFEF 0%, #F8F8F8 100%);  /* IE10 */ 
-	background-image: -moz-linear-gradient(top, #EFEFEF 0%, #F8F8F8 100%); /* Mozilla Firefox */ 
-	background-image: -o-linear-gradient(top, #EFEFEF 0%, #F8F8F8 100%); /* Opera */ 
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#EFEFEF), to(#F8F8F8)); /* Webkit (Safari/Chrome 10) */ 
-	/* background-image: -webkit-linear-gradient(left top, ##EFEFEF 0%, #F8F8F8 100%); */ /* Webkit (Chrome 11+) */ 
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EFEFEF', endColorstr='#F8F8F8'); /* for IE */
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#EFEFEF, endColorstr=#F8F8F8)";
-	background-image: linear-gradient(top, #EFEFEF 0%, #F8F8F8 100%); /* Proposed W3C Markup */
 }
 
 #category_items_carousel .product{
 	box-sizing: border-box;
-	color: #555;
+	color: #222;
 }
 
 #category_items_carousel .item img{
 	border-radius: 5px;
 	border: 1px solid #CCCCCC;	
 	margin: 0px auto;
+	height: 200px;
 }	
 #category_items_carousel .product .text{
 	padding: 10px 10px 0px;
 }
 
-#category_items_carousel .product .text h3{
+
+#category_items_carousel .product .text a{
+	color: #222;
 	font-size: 18px;
-	height: 42px;
+	height: 58px;
 	text-align: center;
 	overflow: hidden;
+	display: block;
+	margin: 10px 0px 2px;
+	line-height: 18px;
 }
 
-#category_items_carousel .product .text h3 a{
-	color: #555;
-}
-
-#category_items_carousel .product .text h3 a:hover{
+#category_items_carousel .product .text a:hover{
 	color: #000;
+	text-decoration: underline;
 }
 
 #category_items_carousel .product .text p.price{

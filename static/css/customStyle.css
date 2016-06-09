@@ -177,19 +177,18 @@ footer p {
 	padding: 10px 10px 0px;
 }
 
-#hot-this-week-carousel .product .text h3{
+#hot-this-week-carousel .product .text a{
+	color: #222;
+	text-decoration: none;
 	font-size: 18px;
 	height: 58px;
 	text-align: center;
 	overflow: hidden;
+	display: block;
+	line-height: 18px;
 }
 
-#hot-this-week-carousel .product .text h3 a{
-	color: #222;
-	text-decoration: none;
-}
-
-#hot-this-week-carousel .product .text h3 a:hover{
+#hot-this-week-carousel .product .text a:hover{
 	color: #000;
 }
 
@@ -306,20 +305,24 @@ li.first-subctgr{
 	padding: 10px 10px 0px;
 }
 
-#category-list-container .product .text h3{
-	font-size: 18px;
-	height: 58px;
-	text-align: center;
-	overflow: hidden;
-}
-
-#category-list-container .product .text h3 a{
+#category-list-container .product .text a{
 	color: #222;
 	text-decoration: none;
+	font-size: 18px;
+	height: 18px;
+	text-align: center;
+	overflow: hidden;
+	display: block;
+	margin: 10px 0px 2px;
+	line-height: 18px;
 }
 
-#category-list-container .product .text h3 a:hover{
+#category-list-container .product .text a:hover{
 	color: #000;
+}
+
+#category-list-container .product .text a.category-product-link{
+	height: 58px;
 }
 
 #mainImage img{

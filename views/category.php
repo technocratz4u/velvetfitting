@@ -105,7 +105,7 @@
 						                			<img src="<?php echo $subCategoryDetailElem["images"]["thumb_url"][__FRONT_IMAGE_NAME] ?>" alt="" class="img-responsive">
 						                		</div>
 						                		<div class="text">
-					                                <h3><a href="<?php echo __WEB_ROOT."/category/".$subCategoryDetailElem["sub_category_url_pattern"]."/".$subCategoryDetailElem["sub_category_id"] ?>"><?php echo $subCategoryDetailElem["sub_category_name"] ?></a></h3>
+					                                <a href="<?php echo __WEB_ROOT."/category/".$subCategoryDetailElem["sub_category_url_pattern"]."/".$subCategoryDetailElem["sub_category_id"] ?>"><?php echo $subCategoryDetailElem["sub_category_name"] ?></a>
 					                            </div>
 						                	</div>
 						                </div>
@@ -143,7 +143,7 @@
 						                			<img src="<?php echo $itemDetailElem["images"]["thumb_url"][__FRONT_IMAGE_NAME] ?>" alt="" class="img-responsive">
 						                		</div>
 						                		<div class="text">
-					                                <h3><a href="<?php echo __WEB_ROOT."/product/".$itemDetailElem["item_url_pattern"]."/".$itemDetailElem["item_id"] ?>"><?php echo $itemDetailElem["item_name"] ?><br/>(<?php echo $itemDetailElem["item_code"] ?>)</a></h3>
+					                                <a class="category-product-link" href="<?php echo __WEB_ROOT."/product/".$itemDetailElem["item_url_pattern"]."/".$itemDetailElem["item_id"] ?>"><?php echo $itemDetailElem["item_name"] ?><br/>(<?php echo $itemDetailElem["item_code"] ?>)</a>
 					                            </div>
 						                	</div>
 						                </div>

@@ -25,3 +25,16 @@ Ensure the heading tags are placed properly in the pages as per the flow of the 
 ----------------------------DEPLOYMENT-TODOs------------------------------------
 Ensure the ENV variable is properly configured for PRODUCTION
 check the JSON-LD parameter completion for all pages
+
+
+
+
+
+
+Is there any other brand maintained by PRIME CREATIONS?
+Are the logos same for PRIME CREATIONS and Velvet Fitting?
+Do they have separate Website,logo or email for PRIME CREATIONS ?
+Do they have separate social media profiles for PRIME CREATIONS and Velvet FItting ?
+Working hours for Velvet Fitting?
+DO they have a company copyright in the name of PRIME CREATIONS?
+DO they have a company copyright in the name of PRIME CREATIONS?
