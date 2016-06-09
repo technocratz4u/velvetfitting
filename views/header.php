@@ -22,10 +22,10 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="<?php echo __APPLICATION_URL?>" class="active">Home</a></li>
-					<li><a href="<?php echo __WEB_ROOT?>/category">Products</a></li>
-					<li><a href="<?php echo __WEB_ROOT?>/about">About</a></li>
-					<li><a href="<?php echo __WEB_ROOT?>/contact">Contact</a></li>
+					<li><a id="menu_home" href="<?php echo __APPLICATION_URL?>" class="navigation_menu">Home</a></li>
+					<li><a id="menu_products"href="<?php echo __WEB_ROOT?>/category" class="navigation_menu">Products</a></li>
+					<li><a id="menu_about" href="<?php echo __WEB_ROOT?>/about" class="navigation_menu">About</a></li>
+					<li><a id="menu_contact" href="<?php echo __WEB_ROOT?>/contact" class="navigation_menu">Contact</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->

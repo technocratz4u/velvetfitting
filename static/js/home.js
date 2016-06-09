@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	
+	$(".navigation_menu").removeClass("active");
+	$("#menu_home").addClass("active");
+	
 	$('#homeCarousel').owlCarousel({
     	slideSpeed : 100,
 		paginationSpeed : 400,

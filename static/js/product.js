@@ -1,5 +1,8 @@
 $(document).ready(function() {
 	
+	$(".navigation_menu").removeClass("active");
+	$("#menu_products").addClass("active");
+	
 	$("#category_items_carousel").owlCarousel({
 
 		items : 4, //5 items above 1000px browser width

@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	
+	$(".navigation_menu").removeClass("active");
+	$("#menu_contact").addClass("active");
+	
     function initialize() {
         var mapOptions = {
             zoom: 15,
