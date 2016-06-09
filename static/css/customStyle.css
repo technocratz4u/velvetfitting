@@ -51,6 +51,20 @@ hr {
 	margin-bottom: 0px;
 }
 
+.navigation-brand{
+	line-height: 40px;
+	padding: 5px 20px;	
+}
+
+.navigation-brand img{
+	height: 40px;
+	display: inline;
+	margin: 0px;
+	vertical-align: top;
+	border-radius: 6px;
+}
+
+
 #page-container{
 	margin-top:20px;
 }
