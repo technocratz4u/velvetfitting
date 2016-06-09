@@ -340,6 +340,9 @@ li.first-subctgr{
 	padding-top:10px;
 }
 
+hr.footer-separator{
+	max-width: none;
+}
 .send-inquiry-link{
 	/* Safari */
 	-webkit-transform: rotate(-90deg);
