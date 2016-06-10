@@ -323,6 +323,19 @@ li.first-subctgr{
 	border: 1px solid #AAAAAA;	
 	margin: 0px auto;
 	height: 200px;
+	
+	-webkit-animation-duration: 4s;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-duration: 4s;
+	-moz-animation-delay: 1s;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-duration: 4s;
+	-ms-animation-delay: 1s;
+	-ms-animation-iteration-count: infinite;
+	-o-animation-duration: 4s;
+	-o-animation-delay: 1s;
+	-o-animation-iteration-count: infinite;
 }	
 
 #category-list-container .item img:hover{

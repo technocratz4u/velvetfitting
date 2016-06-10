@@ -29,6 +29,9 @@
 
 <?php include "header_includes.php"; ?>
 
+<!-- Animate.css for animations -->
+<link href="<?php echo __WEB_ROOT?>/static/plugins/animate/animate.min.css" rel="stylesheet">
+
 <script type="application/ld+json">
 	[
 	<?php include "json-ld/jsonld_local_business.php"; ?>,
