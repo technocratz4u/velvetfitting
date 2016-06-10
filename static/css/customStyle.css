@@ -369,6 +369,7 @@ li.first-subctgr{
 #mainImage img{
 	padding: 20px;
 	margin: 0px auto;
+	max-height: 500px;
 }
 
 #copyright-row{
