@@ -46,10 +46,12 @@
 					<hr>
 					<div class="row">
 						<div class="col-md-7 col-sm-6 col-xs-12">
-							<div id="mainImage" class="zoomframe zoomin">
+							<div id="mainImage">
 								<img
 									src="<?php echo $productDetails["images"]["image_url"][__FRONT_IMAGE_NAME]?>"
-									alt="" class="img-responsive" id="product-image">
+									data-big="<?php echo $productDetails["images"]["image_url"][__FRONT_IMAGE_NAME]?>" 
+									data-big2x="<?php echo $productDetails["images"]["image_url"][__FRONT_IMAGE_NAME]?>"
+									alt="" class="img-responsive" id="product-image" />
 							</div>
 						</div>
 						<div class="clearfix visible-xs-block"></div>
@@ -121,6 +123,8 @@
 	<?php include "footer.php"; ?>
 
 	<?php include "footer_includes.php"; ?>
+	
+	<script src="<?php echo __WEB_ROOT?>/static/plugins/jquery-magnify-zoom/jquery.mlens-1.6.min.js"></script>
 	
 	<script src="<?php echo __WEB_ROOT?>/static/js/product.js"></script>
 

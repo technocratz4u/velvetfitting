@@ -18,6 +18,7 @@ _404error.php
 4. For searched pages using Ids like http://ubuntu-vbox/category/<name>/<id>, make sure the rel=canonical is formed properly.
 5. For searched pages missing Ids like http://ubuntu-vbox/category/<name>, try to 301 redirect to a proper url.
 6. Add <meta name="robots" content="noindex"> to pages which you dont want to index.
+7. Ensure the "alt" attribute for all the images carries a sensible value
 
 
 Ensure the heading tags are placed properly in the pages as per the flow of the page

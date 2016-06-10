@@ -156,7 +156,7 @@ footer p {
 }
 
 #faucets-img{
-	margin-top: 10px;
+	margin: 10px auto 0px auto;
 }
 
 #hot-this-week-carousel .item{
@@ -446,6 +446,16 @@ fieldset[disabled] .btn-dark.active {
 }
 
 
+
+@media screen and (max-width:400px) {
+	.buy-from-us-list ul{
+		padding-left: 24px;
+	}
+	
+	.navigation-brand-text{
+		display:none;
+	}
+}
 @media screen and (min-width:768px) {
     .brand {
         display: inherit;
@@ -526,6 +536,14 @@ fieldset[disabled] .btn-dark.active {
         font-size: 1.25em;
     }
     
+    .buy-from-us-list ul{
+		padding-left: 182px;
+	}
+	
+	#buy-from-us-img{
+		max-width: 60%
+	}
+	
     .product-first-para{
     	overflow: hidden;
 		text-overflow: ellipsis;
@@ -554,6 +572,10 @@ fieldset[disabled] .btn-dark.active {
     .buy-from-us-list > ul > li{
     	line-height: 32px;
     }
+    
+    #buy-from-us-img{
+		max-width: 100%;
+	}
 }
 
 @media screen and (min-width:1200px) {

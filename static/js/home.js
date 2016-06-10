@@ -3,6 +3,30 @@ $(document).ready(function() {
 	$(".navigation_menu").removeClass("active");
 	$("#menu_home").addClass("active");
 	
+	var windowViewPortHeight = $( window ).height();
+	var isGetToKnowLColAnimated = false;
+	var isGetToKnowRColAnimated = false;
+	$(window).scroll(function() {
+	    var scrollPosition = $(window).scrollTop();
+	    if(!isGetToKnowLColAnimated){
+	    	var getToKnowLColTop = $("#get-to-know-lcol").offset().top;
+	    	if(scrollPosition>(getToKnowLColTop-windowViewPortHeight)){
+	    		$("#get-to-know-lcol").addClass("animated bounceInLeft");
+	    		isGetToKnowLColAnimated = true;
+	    		//console.log("Animating GetToKnowLCol at scrollPosition : "+scrollPosition+", getToKnowLColTop : "+getToKnowLColTop+", windowViewPortHeight : "+windowViewPortHeight);
+	    	}
+	    	//console.log(": "+scrollPosition+"--"+getToKnowLColTop+"--"+windowViewPortHeight);
+	    }
+	    if(!isGetToKnowRColAnimated){
+	    	var getToKnowRColTop = $("#get-to-know-rcol").offset().top;
+	    	if(scrollPosition>(getToKnowRColTop-windowViewPortHeight)){
+	    		$("#get-to-know-rcol").addClass("animated bounceInRight");
+	    		isGetToKnowRColAnimated = true;
+	    		//console.log("Animating GetToKnowRCol at scrollPosition : "+scrollPosition+", getToKnowRColTop : "+getToKnowRColTop+", windowViewPortHeight : "+windowViewPortHeight);
+	    	}
+	    }
+	});
+	
 	$('#homeCarousel').owlCarousel({
     	slideSpeed : 100,
 		paginationSpeed : 400,
@@ -26,22 +50,6 @@ $(document).ready(function() {
 
 	});
 	
-	//$("#faucets-img").magnify();
-	$("#faucets-img").mlens({
-		imgSrc: $(this).attr("data-big"),	  // path of the hi-res version of the image
-		imgSrc2x: $(this).attr("data-big2x"),  // path of the hi-res @2x version of the image
-                                                  //for retina displays (optional)
-		lensShape: "circle",                // shape of the lens (circle/square)
-		lensSize: ["30%","30%"],            // lens dimensions (in px or in % with respect to image dimensions)
-		                                    // can be different for X and Y dimension
-		borderSize: 4,                  // size of the lens border (in px)
-		borderColor: "#fff",            // color of the lens border (#hex)
-		borderRadius: 0,                // border radius (optional, only if the shape is square)
-		//imgOverlay: $("#gear").attr("data-overlay"), // path of the overlay image (optional)
-		overlayAdapt: true,    // true if the overlay image has to adapt to the lens size (boolean)
-		zoomLevel: 1,          // zoom level multiplicator (number)
-		responsive: true       // true if mlens has to be responsive (boolean)
-	});
 	
 	
 });

@@ -14,6 +14,9 @@
 	
 <?php include "header_includes.php"; ?>
 
+<!-- Animate.css for animations -->
+<link href="<?php echo __WEB_ROOT?>/static/plugins/animate/animate.min.css" rel="stylesheet">
+
 <script type="application/ld+json">
 	[
 	<?php include "json-ld/jsonld_local_business.php"; ?>,
@@ -43,7 +46,7 @@
 				      <div class="item"><img class="img-responsive" src="<?php echo __WEB_ROOT?>/static/img/homePageSliders/slide3.jpg" alt="fittings"></div>
 				     
 				    </div>
-					<h2 class="brand-before">
+					<h2 class="brand-before" id="welcome-header">
 						<small>Welcome to</small>
 					</h2>
 					<h1 class="brand-name">Velvet Fitting</h1>
@@ -60,12 +63,12 @@
 			<div class="box">
 				<div class="col-lg-12">
 					<hr>
-					<h2 class="intro-text text-center">
+					<h2 class="intro-text text-center" id="get-to-know-row-header">
 						Get to know <strong>Our Products</strong>
 					</h2>
 					<hr>
-					<div class="row">
-						<div class="col-sm-6 col-lg-7">
+					<div class="row" id="get-to-know-row">
+						<div class="col-sm-6 col-lg-7" id="get-to-know-lcol">
 							<p class="box-title"><strong>Faucets</strong></p>
 							<p class="product-first-para">Velvet Fitting faucets provide an unmatched experience with their unparalleled quality and performance. 
 								Our in-house state of the art design team is completely integrated to produce 60000 faucets per day. 
@@ -76,7 +79,7 @@
 							
 							<a href="#" class="btn btn-dark" style="margin:10px 0px 23px 0px;">Read More »</a>
 						</div>
-						<div class="col-sm-6 col-lg-5">
+						<div class="col-sm-6 col-lg-5" id="get-to-know-rcol">
 							<img alt="Faucets" class="img-responsive" id="faucets-img" 
 							src="<?php echo __WEB_ROOT?>/static/img/Frisbee-Design-Waterfall-LED-Faucet.jpeg" 
 							data-big="<?php echo __WEB_ROOT?>/static/img/Frisbee-Design-Waterfall-LED-Faucet.jpeg" 

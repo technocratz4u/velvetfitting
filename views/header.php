@@ -16,7 +16,7 @@
 						class="icon-bar"></span>
 				</button>
 				<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-				<a class="navbar-brand navigation-brand" href="<?php echo __APPLICATION_URL?>"><img alt="Logo" src="<?php echo __WEB_ROOT?>/static/img/logo.gif" /> Velvet Fitting</a>
+				<a class="navbar-brand navigation-brand" href="<?php echo __APPLICATION_URL?>"><img alt="Logo" src="<?php echo __WEB_ROOT?>/static/img/logo.gif" /> <span class="navigation-brand-text">Velvet Fitting</span></a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse"
