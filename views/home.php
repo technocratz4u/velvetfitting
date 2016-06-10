@@ -131,7 +131,7 @@
 					</h2>
 					<hr>
 					<div class="row" id="buy-from-us-body">
-						<div class="col-md-5 buy-from-us-list">
+						<div class="col-md-5 buy-from-us-list" id="buy-from-us-list-lcol">
 							<ul>
 								<li>Easy modes of payment - suitable for all</li>
 								<li>Experienced manpower - best in class</li>
@@ -140,9 +140,11 @@
 							</ul>
 						</div>
 						<div class="col-md-2" id="buy-from-us-banner">
-							<img class="img-responsive" id="buy-from-us-img" src="<?php echo __WEB_ROOT?>/static/img/kitchen-faucet-bg-pulldowninline.jpg" alt="Why Buy from Us">
+							<img class="img-responsive" id="buy-from-us-img" 
+								src="<?php echo __WEB_ROOT?>/static/img/kitchen-faucet-bg-pulldowninline.jpg" 
+								alt="Why Buy from Us">
 						</div>
-						<div class="col-md-5 buy-from-us-list">
+						<div class="col-md-5 buy-from-us-list" id="buy-from-us-list-rcol">
 							<ul>
 								<li>Timely deliveries - on time every time</li>
 								<li>Transparent dealings - you get what you see</li>

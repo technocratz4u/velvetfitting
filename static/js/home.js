@@ -3,9 +3,13 @@ $(document).ready(function() {
 	$(".navigation_menu").removeClass("active");
 	$("#menu_home").addClass("active");
 	
+	$("#buy-from-us-img").addClass("animated zoomIn");
+	
 	var windowViewPortHeight = $( window ).height();
 	var isGetToKnowLColAnimated = false;
 	var isGetToKnowRColAnimated = false;
+	var isBuyFromUsLColAnimated = false;
+	var isBuyFromUsRColAnimated = false;
 	$(window).scroll(function() {
 	    var scrollPosition = $(window).scrollTop();
 	    if(!isGetToKnowLColAnimated){
@@ -15,7 +19,6 @@ $(document).ready(function() {
 	    		isGetToKnowLColAnimated = true;
 	    		//console.log("Animating GetToKnowLCol at scrollPosition : "+scrollPosition+", getToKnowLColTop : "+getToKnowLColTop+", windowViewPortHeight : "+windowViewPortHeight);
 	    	}
-	    	//console.log(": "+scrollPosition+"--"+getToKnowLColTop+"--"+windowViewPortHeight);
 	    }
 	    if(!isGetToKnowRColAnimated){
 	    	var getToKnowRColTop = $("#get-to-know-rcol").offset().top;
@@ -23,6 +26,22 @@ $(document).ready(function() {
 	    		$("#get-to-know-rcol").addClass("animated bounceInRight");
 	    		isGetToKnowRColAnimated = true;
 	    		//console.log("Animating GetToKnowRCol at scrollPosition : "+scrollPosition+", getToKnowRColTop : "+getToKnowRColTop+", windowViewPortHeight : "+windowViewPortHeight);
+	    	}
+	    }
+	    if(!isBuyFromUsLColAnimated){
+	    	var buyFromUsLColTop = $("#buy-from-us-list-lcol").offset().top;
+	    	if(scrollPosition>(buyFromUsLColTop-windowViewPortHeight)){
+	    		$("#buy-from-us-list-lcol").addClass("animated zoomIn");
+	    		isBuyFromUsLColAnimated = true;
+	    		//console.log("Animating GetToKnowLCol at scrollPosition : "+scrollPosition+", getToKnowLColTop : "+getToKnowLColTop+", windowViewPortHeight : "+windowViewPortHeight);
+	    	}
+	    }
+	    if(!isBuyFromUsRColAnimated){
+	    	var buyFromUsRColTop = $("#buy-from-us-list-rcol").offset().top;
+	    	if(scrollPosition>(buyFromUsRColTop-windowViewPortHeight)){
+	    		$("#buy-from-us-list-rcol").addClass("animated zoomIn");
+	    		isBuyFromUsRColAnimated = true;
+	    		//console.log("Animating GetToKnowLCol at scrollPosition : "+scrollPosition+", getToKnowLColTop : "+getToKnowLColTop+", windowViewPortHeight : "+windowViewPortHeight);
 	    	}
 	    }
 	});
