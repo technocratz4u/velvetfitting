@@ -9,10 +9,18 @@ $(document).ready(function() {
 		$("#subctgr_"+$("#selectedSubCategoryId").val()).addClass("active");
 	}
 	
-	setInterval(animateCategoryElements, 5000);
+	//setInterval(animateCategoryElements, 5000);
+	
+	/**
+	 * Always call the skrollr init function after any document height changing plugin like carousel
+	 */
+	skrollr.init({
+		skrollrBody:'page-container',
+		edgeStrategy:'set'
+	});
 });
 
-function animateCategoryElements(){
+/*function animateCategoryElements(){
 	var currentIndex = moduloIndex;
 	console.log("----------------------------- moduloIndex:"+moduloIndex);
 	while(currentIndex<$(".hot-this-week-img-container img").length){
@@ -25,4 +33,4 @@ function animateCategoryElements(){
 	}
 	
 	moduloIndex = (moduloIndex+1)%intervalIndex;
-}
+}*/

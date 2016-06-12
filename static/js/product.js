@@ -35,6 +35,14 @@ $(document).ready(function() {
 		responsive: true       // true if mlens has to be responsive (boolean)
 	});
 	
+	/**
+	 * Always call the skrollr init function after any document height changing plugin like carousel
+	 */
+	skrollr.init({
+		skrollrBody:'page-container',
+		edgeStrategy:'set'
+	});
+	
 });
 
 //add an item to the cart

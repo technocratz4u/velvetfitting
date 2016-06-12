@@ -29,9 +29,6 @@
 
 <?php include "header_includes.php"; ?>
 
-<!-- Animate.css for animations -->
-<link href="<?php echo __WEB_ROOT?>/static/plugins/animate/animate.min.css" rel="stylesheet">
-
 <script type="application/ld+json">
 	[
 	<?php include "json-ld/jsonld_local_business.php"; ?>,
@@ -57,7 +54,7 @@
 ?>
 </head>
 
-<body>
+<body data-0-top-top="background-position:0px 0px;" data-0-bottom-bottom="background-position:0px -10000px;">
 
 	<?php include "header.php"; ?>
 	
@@ -105,7 +102,8 @@
 										<div class="item">
 						                	<div class="product">
 						                		<div class="hot-this-week-img-container zoomframe zoomin">
-						                			<img src="<?php echo $subCategoryDetailElem["images"]["thumb_url"][__FRONT_IMAGE_NAME] ?>" alt="" class="img-responsive">
+						                			<img 
+						                			src="<?php echo $subCategoryDetailElem["images"]["thumb_url"][__FRONT_IMAGE_NAME] ?>" alt="" class="img-responsive">
 						                		</div>
 						                		<div class="text">
 					                                <a href="<?php echo __WEB_ROOT."/category/".$subCategoryDetailElem["sub_category_url_pattern"]."/".$subCategoryDetailElem["sub_category_id"] ?>"><?php echo $subCategoryDetailElem["sub_category_name"] ?></a>
@@ -143,7 +141,8 @@
 										<div class="item">
 						                	<div class="product">
 						                		<div class="hot-this-week-img-container zoomframe zoomin">
-						                			<img src="<?php echo $itemDetailElem["images"]["thumb_url"][__FRONT_IMAGE_NAME] ?>" alt="" class="img-responsive">
+						                			<img 
+						                			src="<?php echo $itemDetailElem["images"]["thumb_url"][__FRONT_IMAGE_NAME] ?>" alt="" class="img-responsive">
 						                		</div>
 						                		<div class="text">
 					                                <a class="category-product-link" href="<?php echo __WEB_ROOT."/product/".$itemDetailElem["item_url_pattern"]."/".$itemDetailElem["item_id"] ?>"><?php echo $itemDetailElem["item_name"] ?><br/>(<?php echo $itemDetailElem["item_code"] ?>)</a>

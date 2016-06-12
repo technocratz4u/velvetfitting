@@ -26,7 +26,7 @@
 
 </head>
 
-<body>
+<body data-0-top-top="background-position:0px 0px;" data-0-bottom-bottom="background-position:0px -10000px;">
 
 	<?php include "header.php"; ?>
 	<?php 
@@ -35,7 +35,7 @@
 	?>
 	
 	<div class="container" id="page-container">
-
+		
 		<div class="row">
 			<div class="box">
 				<div class="col-lg-12 text-center">
@@ -68,7 +68,11 @@
 					</h2>
 					<hr>
 					<div class="row" id="get-to-know-row">
-						<div class="col-sm-6 col-lg-7" id="get-to-know-lcol">
+						<div class="col-sm-6 col-lg-7" id="get-to-know-lcol" 
+							data-0-bottom-top="transform:scale(0) rotate(0deg);opacity:0;" 
+							data-0-center-top="transform:scale(1) rotate(720deg);opacity:1;" 
+							data-0-center-bottom="transform:scale(1) rotate(720deg);opacity:1;"
+							data-0-top-bottom="transform:scale(0) rotate(0deg);opacity:0;">
 							<p class="box-title"><strong>Faucets</strong></p>
 							<p class="product-first-para">Velvet Fitting faucets provide an unmatched experience with their unparalleled quality and performance. 
 								Our in-house state of the art design team is completely integrated to produce 60000 faucets per day. 
@@ -79,7 +83,11 @@
 							
 							<a href="#" class="btn btn-dark" style="margin:10px 0px 23px 0px;">Read More »</a>
 						</div>
-						<div class="col-sm-6 col-lg-5" id="get-to-know-rcol">
+						<div class="col-sm-6 col-lg-5" id="get-to-know-rcol"
+							data-0-bottom-top="transform:scale(0) rotate(0deg);opacity:0;" 
+							data-0-center-top="transform:scale(1) rotate(720deg);opacity:1;" 
+							data-0-center-bottom="transform:scale(1) rotate(720deg);opacity:1;"
+							data-0-top-bottom="transform:scale(0) rotate(0deg);opacity:0;">
 							<img alt="Faucets" class="img-responsive" id="faucets-img" 
 							src="<?php echo __WEB_ROOT?>/static/img/Frisbee-Design-Waterfall-LED-Faucet.jpeg" 
 							data-big="<?php echo __WEB_ROOT?>/static/img/Frisbee-Design-Waterfall-LED-Faucet.jpeg" 
@@ -163,8 +171,6 @@
 	<?php include "footer.php"; ?>
 
 	<?php include "footer_includes.php"; ?>
-	
-	<script src="<?php echo __WEB_ROOT?>/static/plugins/jquery-magnify-zoom/jquery.mlens-1.6.min.js"></script>
 	
 	<script src="<?php echo __WEB_ROOT?>/static/js/home.js"></script>
 

@@ -23,5 +23,13 @@ $(document).ready(function() {
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
+    
+    /**
+	 * Always call the skrollr init function after any document height changing plugin like carousel
+	 */
+	skrollr.init({
+		skrollrBody:'page-container',
+		edgeStrategy:'set'
+	});
 		
 });

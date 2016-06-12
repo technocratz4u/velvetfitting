@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body data-0-top-top="background-position:0px 0px;" data-0-bottom-bottom="background-position:0px -10000px;">
 
 	<?php include "header.php"; ?>
 

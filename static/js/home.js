@@ -5,6 +5,7 @@ $(document).ready(function() {
 	
 	$("#buy-from-us-img").addClass("animated zoomIn");
 	
+	/*
 	var windowViewPortHeight = $( window ).height();
 	var isGetToKnowLColAnimated = false;
 	var isGetToKnowRColAnimated = false;
@@ -45,7 +46,7 @@ $(document).ready(function() {
 	    	}
 	    }
 	});
-	
+	*/
 	$('#homeCarousel').owlCarousel({
     	slideSpeed : 100,
 		paginationSpeed : 400,
@@ -69,6 +70,12 @@ $(document).ready(function() {
 
 	});
 	
-	
+	/**
+	 * Always call the skrollr init function after any document height changing plugin like carousel
+	 */
+	skrollr.init({
+		skrollrBody:'page-container',
+		edgeStrategy:'set'
+	});
 	
 });
