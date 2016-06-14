@@ -629,4 +629,9 @@ fieldset[disabled] .btn-dark.active {
     -o-transform:scale(1.25); /* Opera */
     transform:scale(1.25);
 }
+
+#map {
+  height: 400px;
+}
+
 /** zoom feature end **/
