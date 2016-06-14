@@ -6,15 +6,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <?php
-	$productDetails = $model;
+$productDetails = $model;
 ?>
 
-<meta name="description" content="Product detail of <?php echo $productDetails["item_name"]?> manufactured by Velvet Fitting - PRIME CREATIONS, largest bathroom fitting manufacturer cum supplier, classy and affordable faucet based out of Delhi, India">
-<link rel="canonical" href="<?php echo __APPLICATION_URL."/product"."/".$productDetails["item_name_url_pattern"]."/".$productDetails["item_id"]?>" />
+<meta name="description"
+	content="Product detail of <?php echo $productDetails["item_name"]?> manufactured by Velvet Fitting - PRIME CREATIONS, largest bathroom fitting manufacturer cum supplier, classy and affordable faucet based out of Delhi, India">
+<link rel="canonical"
+	href="<?php echo __APPLICATION_URL."/product"."/".$productDetails["item_name_url_pattern"]."/".$productDetails["item_id"]?>" />
 
 <title><?php echo $productDetails["item_name"]?> | <?php echo $productDetails["category_name"]?> Product | Velvet Fitting Product</title>
 
-<link href="<?php echo __WEB_ROOT?>/static/css/product.css" rel="stylesheet" />
+<link href="<?php echo __WEB_ROOT?>/static/css/product.css"
+	rel="stylesheet" />
 
 <?php include "header_includes.php"; ?>
 
@@ -29,7 +32,8 @@
 
 </head>
 
-<body data-0-top-top="background-position:0px 0px;" data-0-bottom-bottom="background-position:0px -10000px;">
+<body data-0-top-top="background-position:0px 0px;"
+	data-0-bottom-bottom="background-position:0px -10000px;">
 
 	<?php include "header.php"; ?>
 
@@ -49,7 +53,7 @@
 							<div id="mainImage">
 								<img
 									src="<?php echo $productDetails["images"]["image_url"][__FRONT_IMAGE_NAME]?>"
-									data-big="<?php echo $productDetails["images"]["image_url"][__FRONT_IMAGE_NAME]?>" 
+									data-big="<?php echo $productDetails["images"]["image_url"][__FRONT_IMAGE_NAME]?>"
 									data-big2x="<?php echo $productDetails["images"]["image_url"][__FRONT_IMAGE_NAME]?>"
 									alt="" class="img-responsive" id="product-image" />
 							</div>
@@ -57,20 +61,27 @@
 						<div class="clearfix visible-xs-block"></div>
 						<div class="col-xs-12 col-sm-6 col-md-5">
 							<h2 style="font-size: 24px;">
-								<?php echo $productDetails["item_name"].' ('.$productDetails["category_name"].')'?><br/>
+								<?php echo $productDetails["item_name"].' ('.$productDetails["category_name"].')'?><br />
 								<?php echo $productDetails["item_code"]?>
 							</h2>
+							<hr>
+							<p style="font-size: 14px;">
+							Velvet Fitting is one of the leading exporters and suppliers of <?php echo $productDetails["item_name"]?>. The product is procured from reliable vendors in the market and is offered in various designs to meet Customers' needs. The product is widely acclaimed for its elegance, rust resistance, stylish design, durability and quality.
+							</p>
+							<hr>
 							<div class="media">
-								<div class="media-body">
-								 <a href="javascript:void(0);" onclick ='addToEnquiryList("<?php echo $productDetails["item_name"].' ('.$productDetails["category_name"].')-'.$productDetails["item_code"]?>")'
-										class="btn btn-dark"><i class="fa fa-question-circle"></i> Add to
-										Enquiry List</a>
-									<p>&nbsp;</p>
-									<p>Show it to your friends</p>
+								<div class="media-left">
+									<a href="javascript:void(0);"
+										onclick='addToEnquiryList("<?php echo $productDetails["item_name"].' ('.$productDetails["category_name"].')-'.$productDetails["item_code"]?>")'
+										class="btn btn-dark"><i class="fa fa-question-circle"></i> Add
+										to Enquiry List</a>
+								</div>
+								<div class="media-body text-center">
+									Show it to your friends
 									<p>
-										<a href="#" class="external facebook" data-animate-hover="pulse"><i
-											class="fa fa-facebook"></i></a> <a href="#"
-											class="external gplus" data-animate-hover="pulse"><i
+										<a href="#" class="external facebook"
+											data-animate-hover="pulse"><i class="fa fa-facebook"></i></a>
+										<a href="#" class="external gplus" data-animate-hover="pulse"><i
 											class="fa fa-google-plus"></i></a> <a href="#"
 											class="external twitter" data-animate-hover="pulse"><i
 											class="fa fa-twitter"></i></a> <a href="#" class="email"
@@ -79,39 +90,42 @@
 								</div>
 							</div>
 						</div>
-		
+
 						<div class="clearfix"></div>
 					</div>
 				</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<hr>
-					<h2 class="intro-text text-center">
-						Other products in <strong><?php echo $productDetails["category_name"]?></strong>
-					</h2>
-					<hr>
-					<div id="category_items_carousel" class="owl-carousel">
+				<div class="row">
+					<div class="col-lg-12">
+						<hr>
+						<h2 class="intro-text text-center">
+							Other products in <strong><?php echo $productDetails["category_name"]?></strong>
+						</h2>
+						<hr>
+						<div id="category_items_carousel" class="owl-carousel">
 	                	<?php
-	                		if(isset($productDetails["category_items"]) && sizeof($productDetails["category_items"])>0){
-	                			foreach ($productDetails["category_items"] as $itemsCategoryIndex => $itemsCategoryElem) {
-	                	?>
+																		if (isset ( $productDetails ["category_items"] ) && sizeof ( $productDetails ["category_items"] ) > 0) {
+																			foreach ( $productDetails ["category_items"] as $itemsCategoryIndex => $itemsCategoryElem ) {
+																				?>
 	                		<div class="item">
-			                	<div class="product">
-			                		<div class="hot-this-week-img-container zoomframe zoomin">
-			                			<img src="<?php echo $itemsCategoryElem["images"]["thumb_url"][__FRONT_IMAGE_NAME] ?>" alt="" class="img-responsive">
-			                		</div>
-			                		<div class="text">
-		                                <a href="<?php echo __WEB_ROOT."/product/".$itemsCategoryElem["item_url_pattern"]."/".$itemsCategoryElem["item_id"] ?>"><?php echo $itemsCategoryElem["item_name"] ?><br/>(<?php echo $itemsCategoryElem["item_code"] ?>)</a>
-		                            </div>
-			                	</div>
-			                </div>
-	                	<?php		
-	                			}
-	                		}
-						?>
+								<div class="product">
+									<div class="hot-this-week-img-container zoomframe zoomin">
+										<img
+											src="<?php echo $itemsCategoryElem["images"]["thumb_url"][__FRONT_IMAGE_NAME] ?>"
+											alt="" class="img-responsive">
+									</div>
+									<div class="text">
+										<a
+											href="<?php echo __WEB_ROOT."/product/".$itemsCategoryElem["item_url_pattern"]."/".$itemsCategoryElem["item_id"] ?>"><?php echo $itemsCategoryElem["item_name"] ?><br />(<?php echo $itemsCategoryElem["item_code"] ?>)</a>
+									</div>
+								</div>
+							</div>
+	                	<?php
+																			}
+																		}
+																		?>
 		              </div>
-			</div>
-		</div>
+					</div>
+				</div>
 			</div>
 
 		</div>
@@ -124,8 +138,9 @@
 
 	<?php include "footer_includes.php"; ?>
 	
-	<script src="<?php echo __WEB_ROOT?>/static/plugins/jquery-magnify-zoom/jquery.mlens-1.6.min.js"></script>
-	
+	<script
+		src="<?php echo __WEB_ROOT?>/static/plugins/jquery-magnify-zoom/jquery.mlens-1.6.min.js"></script>
+
 	<script src="<?php echo __WEB_ROOT?>/static/js/product.js"></script>
 
 

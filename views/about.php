@@ -118,11 +118,7 @@
 					<div class="row">
 						<hr>
 						<div class="col-xs-12">
-							<p>
-								<strong> &quot;We mainly deal with bulk quantity order
-									inquiries.&quot; </strong>
-							</p>
-
+							<h4>We mainly deal with bulk quantity order inquiries.</h4>
 						</div>
 					</div>
 				</div>
